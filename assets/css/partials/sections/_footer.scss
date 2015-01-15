@@ -1,0 +1,21 @@
+.main-footer{
+	padding: 30px 20px 30px 20px;
+	border-top: 2px solid #ddd;
+	max-width: 670px;
+	margin: 30px auto 0px auto;
+	p{
+		font-size: 14px;
+		text-align: center;
+		color: $c_dark-text;
+		font-style: italic;
+		a{
+			color: $c_dark-brand;
+			text-decoration: none;
+			@include easing(350ms);
+			&:hover{
+				@include easing(350ms);
+				opacity: 0.7;
+			}
+		}
+	}
+}

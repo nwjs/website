@@ -1,0 +1,49 @@
+.main-releases{
+	padding: 0px 20px 0px 20px;
+	h1{
+		font-size: 14px;
+		color: lighten($c_dark-text, 25%);
+		padding: 0px 0px 20px 0px;
+		text-align: center;
+	}
+	h2{
+		font-size: 22px;
+		padding: 30px 0px 0px 0px;
+		max-width: 670px;
+		margin: 30px auto 0px auto;
+		color: $c_dark-text;
+		border-top: 2px solid #ddd;
+		line-height: 2;
+		a{
+			color: $c_dark-brand;
+			text-decoration: none;
+			@include easing(350ms);
+			&:hover{
+				@include easing(350ms);
+				opacity: 0.7;
+			}
+		}
+	}
+	ul{
+		text-align: center;
+		li{
+			display: inline-block;
+			a{
+				display: inline-block;
+				text-decoration: none;
+				margin: 0px 10px 0px 10px;
+				padding: 10px;
+				border: 2px solid $c_dark-brand;
+				color: $c_dark-brand;
+				text-align: center;
+				border-radius: 5px;
+				@include easing(350ms);
+				&:hover{
+					@include easing(350ms);
+					background-color: $c_dark-brand;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
