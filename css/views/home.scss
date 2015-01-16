@@ -1,0 +1,54 @@
+.container.home {
+    /*background: url('/img/bg_pattern.png');*/
+    text-align: center;
+    .download {
+        background: url('/img/bg_pattern_dark.png');
+        color: #ffffff;
+        padding: 20px 0;
+        h1 {
+            margin-bottom: 20px;
+        }
+        .d32bit, .d64bit {
+            a {
+                display: inline-block;
+                background: url("/img/download_32.png") no-repeat;
+                width: 120px;
+                line-height: 42px;
+                padding-left: 35px;
+                height: 42px;
+                text-align: center;
+                font-size: 0.9em;
+                margin: 4px;
+            }
+        }
+        .d64bit {
+            a {
+                background-image: url('/img/download_64.png');
+            }
+        }
+    }
+    .github {
+        font-size: 1.4em;
+        background: $brand-color;
+        height: 60px;
+        line-height: 60px;
+        color: #ffffff;
+    }
+    .features {
+        width: 900px;
+        margin: 0 auto;
+        padding: 20px 0;
+        h2 {
+        }
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                img {
+                }
+                p {
+                }
+            }
+        }
+    }
+}

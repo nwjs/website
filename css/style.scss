@@ -1,7 +1,6 @@
 $brand-color: #1ca0da;
 
 body {
-    background: url('/img/bg_pattern.png') center center;
     font-family: 'Open Sans', sans-serif;
     a {
         color: inherit;
@@ -12,6 +11,7 @@ body {
     }
 }
 
-.container {
-    min-height: 500px;
-}
+@import "components/header";
+@import "components/footer";
+
+@import "views/home";

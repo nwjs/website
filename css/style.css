@@ -1,9 +1,88 @@
 body {
-  background: url("/img/bg_pattern.png") center center;
   font-family: 'Open Sans', sans-serif; }
   body a {
     color: inherit;
     text-decoration: none; }
 
-.container {
-  min-height: 500px; }
+header .logo-wrapper {
+  height: 168px;
+  background: #1ca0da url("/img/header_l.png") no-repeat left top;
+  position: relative;
+  text-align: center; }
+  header .logo-wrapper:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 184px;
+    height: 100%;
+    background: url("/img/header_r.png") no-repeat right top; }
+  header .logo-wrapper img.logo {
+    margin: 20px auto; }
+header nav {
+  background: #333333;
+  height: 35px;
+  line-height: 35px;
+  color: #f5f5f5;
+  text-align: center; }
+  header nav a {
+    text-transform: uppercase; }
+
+footer {
+  background: #1f1f1f;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 30px; }
+  footer .column {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    vertical-align: top;
+    margin-bottom: 20px; }
+    footer .column h2 {
+      color: #1ca0da; }
+    footer .column a {
+      display: block; }
+  footer .bottom {
+    color: #adadad; }
+    footer .bottom .left {
+      float: left; }
+    footer .bottom .right {
+      float: right; }
+
+.container.home {
+  /*background: url('/img/bg_pattern.png');*/
+  text-align: center; }
+  .container.home .download {
+    background: url("/img/bg_pattern_dark.png");
+    color: #ffffff;
+    padding: 20px 0; }
+    .container.home .download h1 {
+      margin-bottom: 20px; }
+    .container.home .download .d32bit a, .container.home .download .d64bit a {
+      display: inline-block;
+      background: url("/img/download_32.png") no-repeat;
+      width: 120px;
+      line-height: 42px;
+      padding-left: 35px;
+      height: 42px;
+      text-align: center;
+      font-size: 0.9em;
+      margin: 4px; }
+    .container.home .download .d64bit a {
+      background-image: url("/img/download_64.png"); }
+  .container.home .github {
+    font-size: 1.4em;
+    background: #1ca0da;
+    height: 60px;
+    line-height: 60px;
+    color: #ffffff; }
+  .container.home .features {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px 0; }
+    .container.home .features ul {
+      list-style: none; }
+      .container.home .features ul li {
+        display: inline-block; }
