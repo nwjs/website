@@ -1,0 +1,28 @@
+footer {
+    background: #1f1f1f;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 30px;
+    .column {
+        display: inline-block;
+        width: 200px;
+        text-align: left;
+        vertical-align: top;
+        margin-bottom: 20px;
+        h2 {
+            color: $brand-color;
+        }
+        a{
+            display: block;
+        }
+    }
+    .bottom {
+        color: #adadad;
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+    }
+}

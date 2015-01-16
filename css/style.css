@@ -1,0 +1,9 @@
+body {
+  background: url("/img/bg_pattern.png") center center;
+  font-family: 'Open Sans', sans-serif; }
+  body a {
+    color: inherit;
+    text-decoration: none; }
+
+.container {
+  min-height: 500px; }
