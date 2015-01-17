@@ -8,21 +8,23 @@
 
 <div class="container home">
     <div class="download">
-        <h1>Download v0.12.0-alpha1</h1>
+        <h1>Download <%= version_title %></h1>
 
         <div class="d32bit">
-            <a href="#">Linux 32bit</a>
-            <a href="#">Windows 32bit</a>
-            <a href="#">Mac 32bit</a>
+            <% download32Bit.forEach(function(i) { %>
+                <a href="<%= i.link %>"><%= i.label %></a>
+            <% }); %>
         </div>
         <div class="d64bit">
-            <a href="#">Linux 64bit</a>
-            <a href="#">Windows 64bit</a>
-            <a href="#">Mac 64bit</a>
+            <% download64Bit.forEach(function(i) { %>
+                <a href="<%= i.link %>"><%= i.label %></a>
+            <% }); %>
         </div>
-        <a class="release-notes" href="#">Release Notes</a>
+        <a class="release-notes" href="<%= release_notes %>">Release Notes</a>
     </div>
-    <div class="github"><a href="#">View on <b>GitHub</b></a></div>
+    <div class="github">
+        <a href="<%= github_link %>">View on <b>GitHub</b></a>
+    </div>
     <div class="features">
         <h2>NW.js lets you call all Node.js modules directly from DOM and enables a new way of writing applications with
             all Web technologies.</h2>

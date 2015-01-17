@@ -4,6 +4,7 @@
 // load the things we need
 var express = require('express'),
     compression = require('compression'),
+    config = require('./config'),
     app = express();
 
 // Express uses
@@ -17,7 +18,7 @@ app.set('view engine', 'ejs');
 
 // index/home page
 app.get('/', function (req, res) {
-    res.render('pages/index');
+    res.render('pages/index', config);
 });
 
 app.listen(80);
