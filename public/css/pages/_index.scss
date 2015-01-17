@@ -4,9 +4,10 @@
     .download {
         background: url('/img/bg_pattern_dark.png');
         color: #ffffff;
-        padding: 20px 0;
+        padding: 30px 0;
         h1 {
-            margin-bottom: 20px;
+            margin: 0;
+            font-weight: normal;
         }
         .d32bit, .d64bit {
             a {
@@ -18,13 +19,21 @@
                 height: 42px;
                 text-align: center;
                 font-size: 0.9em;
-                margin: 4px;
+                margin: 5px;
             }
         }
+        .d32bit {
+            margin-top: 20px;
+        }
         .d64bit {
+            margin-bottom: 20px;
             a {
                 background-image: url('/img/download_64.png');
             }
+        }
+
+        .release-notes {
+            opacity: 0.5;
         }
     }
     .github {
@@ -42,8 +51,13 @@
         }
         ul {
             list-style: none;
+            width: 900px;
+            text-align: center;
             li {
                 display: inline-block;
+                width: 250px;
+                vertical-align: top;
+                margin: 10px 20px;
                 img {
                 }
                 p {

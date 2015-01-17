@@ -1,6 +1,6 @@
 footer {
     background: #1f1f1f;
-    color: #f5f5f5;
+    color: $text-light-color;
     text-align: center;
     padding: 30px;
     .column {
@@ -17,7 +17,7 @@ footer {
         }
     }
     .bottom {
-        color: #adadad;
+        opacity: 0.5;
         .left {
             float: left;
         }
