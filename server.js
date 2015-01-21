@@ -5,6 +5,8 @@
 var express = require('express'),
     compression = require('compression'),
     config = require('./config'),
+    fs = require('fs'),
+    marked = require('marked'),
     app = express();
 
 // Express uses
@@ -14,11 +16,21 @@ app.use(express.static(__dirname + '/public'));
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
-// use res.render to load up an ejs view file
+// Function for rendering Markdown file
+var markdown = function (filename) {
+    var markdownFile = fs.readFileSync(__dirname + '/views/docs/' + filename, 'utf8');
+    markdownFile = marked(markdownFile);
+
+    return markdownFile;
+}
 
 // index/home page
 app.get('/', function (req, res) {
     res.render('pages/index', config);
+});
+
+app.get('/quickstart', function(req, res) {
+    res.render('pages/quickstart', {markdown: markdown});
 });
 
 app.listen(80);
