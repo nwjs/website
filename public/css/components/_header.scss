@@ -4,6 +4,7 @@ header {
         background: $brand-color url('/img/header_l.png') no-repeat left top;
         position: relative;
         text-align: center;
+        display: block;
 
         &:after {
             content: '';

@@ -9,7 +9,8 @@ header .logo-wrapper {
   height: 168px;
   background: #1ca0da url("/img/header_l.png") no-repeat left top;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  display: block; }
   header .logo-wrapper:after {
     content: '';
     display: block;
@@ -53,7 +54,6 @@ footer {
       float: right; }
 
 .container.home {
-  /*background: url('/img/bg_pattern.png');*/
   text-align: center; }
   .container.home .download {
     background: url("/img/bg_pattern_dark.png");
@@ -99,3 +99,38 @@ footer {
         width: 250px;
         vertical-align: top;
         margin: 10px 20px; }
+
+.container.download {
+  background: url("/img/bg_pattern_light.png");
+  padding: 0; }
+  .container.download .content {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px 30px; }
+
+.container.blog {
+  background: url("/img/bg_pattern_light.png");
+  padding: 0; }
+  .container.blog .content {
+    width: 1000px;
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 10px 30px; }
+
+.container.quickstart {
+  background: url("/img/bg_pattern_light.png");
+  padding: 0; }
+  .container.quickstart .content {
+    width: 1000px;
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 10px 30px; }
+
+.container.docs {
+  background: url("/img/bg_pattern_light.png");
+  padding: 0; }
+  .container.docs .content {
+    width: 1000px;
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 10px 30px; }

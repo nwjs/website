@@ -22,15 +22,27 @@ var markdown = function (filename) {
     markdownFile = marked(markdownFile);
 
     return markdownFile;
-}
+};
 
 // index/home page
 app.get('/', function (req, res) {
     res.render('pages/index', config);
 });
 
+app.get('/download', function(req, res) {
+    res.render('pages/download', config);
+});
+
+app.get('/blog', function(req, res) {
+    res.render('pages/blog', config);
+});
+
 app.get('/quickstart', function(req, res) {
     res.render('pages/quickstart', {markdown: markdown});
+});
+
+app.get('/docs', function(req, res) {
+    res.render('pages/docs', config);
 });
 
 app.listen(80);
