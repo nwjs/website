@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poiret+One|Shadows+Into+Light|Pacifico|Sigmar+One|Quicksand|Orbitron|Dancing+Script|Bangers|Amatic+SC|Righteous|Lobster+Two|Fredoka+One|Jura|Calligraffitti);
+
 *, *:before, *:after {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
@@ -54,6 +56,22 @@ a:hover {
   top: 20px;
   left: 26px;
   height: 120px;
+  -webkit-transform: rotate(2turn);
+  -ms-transform: rotate(2turn) ;
+  -moz-transform: rotate(2turn) ;
+  transform : rotate(2turn) ;
+  -webkit-duration: 3s;
+  -moz-duration: 3s;
+  -ms-duration: 3s;
+  transition-duration: 3s;
+}
+
+.release-logo:hover {
+  -webkit-transform: rotate(5turn);
+  -ms-transform: rotate(5turn) ;
+  -moz-transform: rotate(5turn) ;
+  transform : rotate(5turn);
+}
 }
 
 .release-details {
@@ -144,4 +162,13 @@ a:hover {
 .heading {
     font-size: 55px;
     line-height: 175px;
+    font-family: 'Pacifico', cursive;
+}
+
+.para {
+    font-family: 'Jura', sans-serif;
+}
+
+.version {
+    font-family: 'Orbitron', sans-serif;
 }
