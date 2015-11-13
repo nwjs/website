@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container blog">
     <div class="content">
-        <h1>Blog</h1>
+        <h1 class="heading">Blog Entry</h1>
         <p>content</p>
     </div>
 </div>

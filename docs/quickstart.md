@@ -1,7 +1,7 @@
 ---
 layout: quickstart
 ---
-
+{:.heading}
 ## Quick Start
 
 Create `index.html`:

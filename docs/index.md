@@ -3,6 +3,6 @@ layout: default
 ---
 <div class="container docs">
 	<div class="content">
-		<h1>Docs</h1>
+		<h1 class="heading">Docs</h1>
 	</div>
 </div>

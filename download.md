@@ -3,6 +3,6 @@ layout: default
 ---
 <div class="container download">
 	<div class="content">
-		<h1>Download</h1>
+		<h1 class="heading">Download</h1>
 	</div>
 </div>
