@@ -4,6 +4,13 @@ $brand-color: #1ca0da;
 $text-color: #333333;
 $text-light-color: #f5f5f5;
 
+$bg_pattern_dark: '{{ site.baseurl }}/img/bg_pattern_dark.png';
+$bg_pattern_light: '{{ site.baseurl }}/img/bg_pattern_light.png';
+$download32_img: '{{ site.baseurl }}/img/download_32.png';
+$download64_img: '{{ site.baseurl }}/img/download_64.png';
+$header_l: '{{ site.baseurl }}/img/header_l.png';
+$header_r: '{{ site.baseurl }}/img/header_r.png';
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: $text-color;

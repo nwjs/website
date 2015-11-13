@@ -1,7 +1,7 @@
 .container.home {
 	text-align: center;
     .download {
-        background: url('/img/bg_pattern_dark.png');
+        background: url($bg_pattern_dark);
         color: #ffffff;
         padding: 30px 0;
         h1 {
@@ -11,7 +11,7 @@
         .d32bit, .d64bit {
             a {
                 display: inline-block;
-                background: url("/img/download_32.png") no-repeat;
+                background: url($download32_img) no-repeat;
                 width: 120px;
                 line-height: 42px;
                 padding-left: 35px;
@@ -27,7 +27,7 @@
         .d64bit {
             margin-bottom: 20px;
             a {
-                background-image: url('/img/download_64.png');
+                background-image: url($download64_img);
             }
         }
 
