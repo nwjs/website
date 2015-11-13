@@ -1,3 +1,5 @@
+---
+---
 $brand-color: #1ca0da;
 $text-color: #333333;
 $text-light-color: #f5f5f5;
@@ -15,6 +17,7 @@ body {
 }
 
 @import "global";
+@import "normalize";
 
 @import "components/_header";
 @import "components/_footer";

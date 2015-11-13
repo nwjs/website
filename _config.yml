@@ -1,0 +1,11 @@
+# Site settings
+title: nw.js
+email: your-email@domain.com
+description: nwjs
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://nwjs.io" # the base hostname & protocol for your site
+github_repo: nwjs/nw.js
+permalink: pretty
+
+# Build settings
+markdown: kramdown

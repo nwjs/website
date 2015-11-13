@@ -1,4 +1,2 @@
-.idea
-lib/
-node_modules/
-npm-debug.log
+.sass-cache
+_site
