@@ -1,0 +1,36 @@
+header {
+    .logo-wrapper {
+        height: 168px;
+        background: $brand-color url($header_l) no-repeat left top;
+        position: relative;
+        text-align: center;
+        display: block;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 184px;
+            height: 100%;
+            background: url($header_r) no-repeat right top;
+        }
+
+        img.logo {
+            margin: 20px auto;
+        }
+    }
+
+    nav {
+        background: #333333;
+        height: 35px;
+        line-height: 35px;
+        color: $text-light-color;
+        text-align: center;
+        a {
+            // padding: 0 0.2em;
+            text-transform: uppercase;
+        }
+    }
+}
