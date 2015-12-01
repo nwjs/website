@@ -1,74 +1,86 @@
+<!-- http://monodraw.helftone.com/ -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="nwjs">
-    <meta name="keywords" content="nw.js, nwjs, nw js, node-webkit, node, node.js, chrome, chromium, javascript">
-    <title>NW.js</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <h1 class="heading">NW.js</h1>
-    <h2>
-     <a href="https://github.com/nwjs/nw.js"><code>NW.js</code></a> lets you call all <a href="https://nodejs.org">Node.js</a> <a href="https://www.npmjs.org/">modules</a> directly from DOM and enables a new way of writing applications with all Web technologies. <a href="https://groups.google.com/d/msg/nwjs-general/V1FhvfaFIzQ/720xKVd0jNkJ">It was previously known as "node-webkit" project</a>.
-    </h2>
-    <div class="release">
-      <a href="http://dl.nwjs.io/v0.12.3/" class="release-logo-link">
-        <img class="release-logo" src="images/nw.png" />
-      </a>
-      <div class="release-details">
-        <span class="release-version">
-          <a href="http://dl.nwjs.io/v0.12.3/">Version 0.12.3</a> <a href="https://groups.google.com/d/msg/nwjs-general/hhXCS4aXGV0/TUQmcu5XDwAJ">release notes</a>
-        </span>
-        <br>
-        <span class="release-downloads">
-          Download for
-          <a href="http://dl.nwjs.io/v0.12.3/nwjs-v0.12.3-win-x64.zip">Win64</a>,
-          <a href="http://dl.nwjs.io/v0.12.3/nwjs-v0.12.3-osx-x64.zip">OSX64</a>,
-          <a href="http://dl.nwjs.io/v0.12.3/nwjs-v0.12.3-linux-x64.tar.gz">Linux64</a>,
-          <a href="http://dl.nwjs.io/v0.12.3/nwjs-v0.12.3-win-ia32.zip">Win32</a>,
-          <a href="http://dl.nwjs.io/v0.12.3/nwjs-v0.12.3-osx-ia32.zip">OSX32</a>,
-          <a href="http://dl.nwjs.io/v0.12.3/nwjs-v0.12.3-linux-ia32.tar.gz">Linux32</a>
-        </span>
-      </div>
-    </div>
-        <span class="release-version">
-          <a class="button" href="https://groups.google.com/d/msg/nwjs-general/YuwMHd_uvPM/pLFWG3vYBwAJ">Alpha versions of 0.13.0 supports Chrome App now</a>
-        </span>
-
-    <p>
-        <a href="http://dl.nwjs.io/live-build/">Live builds from git tip</a> are available for testing.
-    </p>
-    <div class="multi-button">
-        <a class="button" target="_blank" href="https://github.com/nwjs/nw.js/issues">
-      Github Issues
-    </a><a class="button" href="https://github.com/nwjs">
-        Github Org
-    </a>
-    </div>
-    <div class="multi-button">
-     <a class="button" target="_blank" href="https://gitter.im/nwjs/nw.js">
-        Chat (Gitter)
-      </a><a class="button" href="https://groups.google.com/d/forum/nwjs-general">
-        Mailing list
-    </a>
-    </div>
-    <br/>
-    <p><a href="https://github.com/nwjs/website">site under construction</a></p>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58514248-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</body>
-
+	<head>
+		<meta charset="UTF-8">
+		<title>ns.js</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.9.0/codemirror.min.css">
+		<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.9.0/codemirror.min.js'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src='js/ui.js'></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.9.0/mode/xml/xml.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.9.0/mode/javascript/javascript.js"></script>
+	</head>
+	<body>
+		<section class='introduction'>
+			<div class="logo-area">
+				<img src="img/nw.png" alt="nw.js Logo" class="logo">
+				<div class='name'>NW.js</div>
+			</div>
+			<div class="container">
+				<h1 class="white center">Write native apps in HTML and JavaScript</h1>
+				<div class="center intro-screenshot">
+					<img src="img/nwjs_main_screen.png" alt="Main app window">
+				</div>
+			</div>
+		</section>
+		<section class='second'>
+			<div class="container">
+				<h1 class="h1">Quick Start</h1>
+				<p class="col-6">
+					Save the code below into the files named appropriately. Save these files in the same directory as the nwjs app. Execute the app and watch the application come to life.
+				</p>
+				<div class="col-4 left">
+					<h2>index.html</h2>
+					<p>
+						<textarea id="indexHTML">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    We are using node.js 
+    <script>
+    	document.write(process.version)
+    </script>.
+  </body>
+</html>
+						</textarea>
+					</p>
+					<h2>package.json</h2>
+					<p>
+						<textarea id="packageJSON">
+{
+  "name": "nw-demo",
+  "version": "0.0.1",
+  "main": "index.html"
+}
+						</textarea>
+					</p>
+				</div>
+				<div class="col-7 right">
+					<img src="img/hello_world.png" alt="Hello World Example" class="hello_world">
+				</div>
+			</div>
+		</section>
+		<section class='third'>
+			<div class="container">
+				<div class="col-8 auto">
+					<h1 class="h1 center">Features</h1>	
+					<p class="center">
+						<ul>
+							<li>Apps are written in HTML5, CSS, JavaScript and WebGL</li>
+							<li>Complete support for Node.js APIs and all its third party modules.</li>
+							<li>Good performance: Node and WebKit run in the same thread: Function calls are made straightforward; objects are in the same heap and can just reference each other.</li>
+							<li>Easy to package and distribute apps.</li>
+							<li>Available on Linux, Mac OS X and Windows</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
