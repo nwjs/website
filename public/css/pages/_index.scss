@@ -20,6 +20,11 @@
                 font-size: 0.9em;
                 margin: 5px;
             }
+            
+            a:hover {
+            	// Stop the text from changing color on hover
+            	color: $text-light-color;
+            }
         }
         .d32bit {
             margin-top: 20px;
