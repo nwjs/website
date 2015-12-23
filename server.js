@@ -45,5 +45,5 @@ app.get('/docs', function(req, res) {
     res.render('pages/docs', config);
 });
 
-app.listen(80);
-console.log('Express.js server is listening on http://localhost:80');
+app.listen(8000);
+console.log('Express.js server is listening on http://localhost:8000');
