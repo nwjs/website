@@ -33,16 +33,29 @@
         height: 60px
         line-height: 60px
         color: #FFF
-    .features
-        width: 900px
+    #features
+        max-width: $page-size
         margin: 0px auto
         padding: 20px 0px
+        h2
+            padding-right: 20px
+            padding-left: 20px
         ul
             list-style: none
-            width: 900px
+            width: 100%
+            max-width: $page-size
+            padding: 0px
             text-align: center
             li
                 display: inline-block
                 width: 250px
                 vertical-align: top
                 margin: 10px 20px
+
+@media (max-width: 525px)
+    .container.home .download
+        .d32bit,
+        .d64bit
+            a
+                display: block
+                margin: 20px auto
