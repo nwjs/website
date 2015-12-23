@@ -1,0 +1,21 @@
+@charset "utf-8";                     // Character type for the stylesheet
+
+//Import google webfont
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,600');
+
+//General Stuff that effects every page
+@import "var";                  // Sass Variables and Mixins - Does not effect page, but other Sass files reference this file.
+@import "meyer";                // Resets browser defaults so browsers render pages the same
+@import "normalize";            // Removes inconsistencies in the way different browsers render items by default. Bootstrap comes with Normalize.
+@import "global";               // Generalized styles that are site specific
+
+//Specific stuff that effects part of every page
+@import "components/_header";   // Styles for the header of every page
+@import "components/_footer";   // Styles for the footer of every page
+
+//Page specific Styles
+@import "pages/_index";         // Styles for the Home page
+@import "pages/_download";      // Styles for the Downloads page
+@import "pages/_blog";          // Styles for the Blog
+@import "pages/_quickstart";    // Styles for the Quickstart page
+@import "pages/_docs";          // Styles for the Docs

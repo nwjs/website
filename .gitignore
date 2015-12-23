@@ -2,3 +2,7 @@
 lib/
 node_modules/
 npm-debug.log
+
+# Sass cache
+.sass-cache/*
+.sass-cache

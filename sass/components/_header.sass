@@ -1,0 +1,26 @@
+header
+    .logo-wrapper
+        height: 168px
+        background: $brand-color url('/img/header_l.png') no-repeat left top
+        position: relative
+        text-align: center
+        display: block
+        &:after
+            content: ''
+            position: absolute
+            top: 0px
+            right: 0px
+            width: 184px
+            display: block
+            height: 100%
+            background: url('/img/header_r.png') no-repeat right top
+        img.logo
+            margin: 20px auto
+    nav
+        background: #333
+        height: 35px
+        color: $text-light-color
+        line-height: 35px
+        text-align: center
+        a
+            text-transform: uppercase
