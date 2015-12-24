@@ -56,13 +56,12 @@
     <script>
         $(document).ready(function(){
             $.get("config.json", function (configData) {
-                var data = JSON.parse(configData);
 
-                $(".version_title").html(data.version_title);
-                $(".release-notes").attr("href", data.release_notes);
+                $(".version_title").html(configData.version_title);
+                $(".release-notes").attr("href", configData.release_notes);
 
                 function downloadsLoop(num) {
-                    var dlNum = data["download" + num + "Bit"];
+                    var dlNum = configData["download" + num + "Bit"];
                     for (var i = 0; i < dlNum.length; i++) {
                         var link = dlNum[i].link;
                         var label = dlNum[i].label;
