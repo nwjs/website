@@ -52,33 +52,26 @@
           document.write(unescape("%3Cscript src='scripts/jquery-2.1.4.min.js' type='text/javascript'%3E%3C/script%3E"));
       }
     </script> <!-- Load local jQuery if Google CDN is unreachable -->
+    <script type="text/javascript" src="_scripts/main.js"></script>
     <script>
         $(document).ready(function(){
-            $.get("_markup/header.html", function (headerData) {
-                $("header").html(headerData);
-            });
-            $.get("_markup/footer.html", function (footerData) {
-                $("footer").html(footerData);
-            });
-            $.get("config.json", function (json) {
-                var data = $.parseJSON(json);
+            $.get("../config.json", function (configData) {
+                var data = JSON.parse(configData)
 
                 $(".version_title").html(data.version_title);
                 $(".release-notes").attr("href", data.release_notes);
 
-                for (var i = 0; i < data.download32Bit.length; i++) {
-                    var link = data.download32Bit[i].link;
-                    var label = data.download32Bit[i].label;
-                    var html = '<a href="' + link + '">' + label + '</a>';
-                    $(".d32bit").append(html);
+                function downloadsLoop(num) {
+                    var dlNum = data["download" + num + "Bit"];
+                    for (var i = 0; i < dlNum.length; i++) {
+                        var link = dlNum[i].link;
+                        var label = dlNum[i].label;
+                        var html = '<a href="' + link + '">' + label + '</a>';
+                        $(".d" + num + "bit").append(html);
+                    }
                 }
-
-                for (var i = 0; i < data.download64Bit.length; i++) {
-                    var link = data.download64Bit[i].link;
-                    var label = data.download64Bit[i].label;
-                    var html = '<a href="' + link + '">' + label + '</a>';
-                    $(".d64bit").append(html);
-                }
+                downloadsLoop("32");
+                downloadsLoop("64");
             });
         });
     </script>
