@@ -8,6 +8,7 @@ var http = require("http");
 var url = require("url");
 var path = require("path");
 var fs = require("fs");
+var exec = require('child_process').exec;
 //Port number to use
 var port = process.argv[2] || 8000;
 //Colors for CLI output
@@ -80,3 +81,51 @@ http.createServer(function (request, response) {
 
 //Message to display when server is started
 console.log(WHT + "Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
+
+
+function open(target, appName, callback) {
+    var opener;
+
+    function escape(s) {
+        return s.replace(/"/g, '\\\"');
+    }
+
+    if (typeof(appName) === 'function') {
+        callback = appName;
+        appName = null;
+    }
+
+    switch (process.platform) {
+        case 'darwin':
+            if (appName) {
+                  opener = 'open -a "' + escape(appName) + '"';
+            } else {
+                opener = 'open';
+            }
+        break;
+        case 'win32':
+            // if the first parameter to start is quoted, it uses that as the title
+            // so we pass a blank title so we can quote the file we are opening
+            if (appName) {
+                opener = 'start "" "' + escape(appName) + '"';
+            } else {
+                opener = 'start ""';
+            }
+        break;
+        default:
+            if (appName) {
+                opener = escape(appName);
+            } else {
+                // use Portlands xdg-open everywhere else
+                opener = path.join(__dirname, '../vendor/xdg-open');
+            }
+        break;
+    }
+
+    if (process.env.SUDO_USER) {
+        opener = 'sudo -u ' + process.env.SUDO_USER + ' ' + opener;
+    }
+    return exec(opener + ' "' + escape(target) + '"', callback);
+}
+
+open("http://localhost:" + port);
