@@ -18,3 +18,7 @@
 @import "_blog.sass";           // Styles for the Blog
 @import "_quickstart.sass";     // Styles for the Quickstart page
 @import "_docs.sass";           // Styles for the Docs
+
+//Highlight.js Plugin
+@import "_ven.hljs.default.sass";
+@import "_ven.hljs.mono.blue.sass";
