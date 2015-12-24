@@ -56,7 +56,7 @@
     <script>
         $(document).ready(function(){
             $.get("config.json", function (configData) {
-                var data = JSON.parse(configData)
+                var data = JSON.parse(configData);
 
                 $(".version_title").html(data.version_title);
                 $(".release-notes").attr("href", data.release_notes);
