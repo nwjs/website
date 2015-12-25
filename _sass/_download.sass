@@ -1,1 +1,36 @@
 .download .container
+    table
+        width: 100%
+        margin: 16px 0px
+        a
+            color: #1CA0DA
+    thead tr
+        background: #333
+        color: #F5F5F5
+        font-size: 1.565em
+        line-height: 48px
+        &:hover
+            background: #333
+    tr
+        background: #FFF
+        &:hover
+            background: #E0F3FB
+    tr:nth-of-type(even)
+        background: #F1FAFE
+        &:hover
+            background: #E0F3FB
+    tr:first-of-type td:nth-of-type(2):after
+        content: '(Recommended Version)'
+        color: rgba(0, 0, 0, 0.6)
+        font-size: 0.8em
+        font-style: italic
+        padding: 0px 0px 0px 7px
+    td:first-of-type
+        font-weight: bold
+
+@media (max-width: 525px)
+    .download .container table
+        font-size: 80%
+        tr:first-of-type td:nth-of-type(2):after
+            content: '(Recommended)'
+            padding-left: 4px
