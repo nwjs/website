@@ -3,7 +3,7 @@
         width: 100%
         margin: 16px 0px
         a
-            color: #1CA0DA
+            color: $brand-color
     thead tr
         background: #333
         color: #F5F5F5
@@ -11,10 +11,14 @@
         line-height: 48px
         &:hover
             background: #333
-    tr
-        background: #FFF
-        &:hover
-            background: #E0F3FB
+    tbody
+        tr
+            background: #FFF
+            line-height: 2em
+            &:hover
+                background: #E0F3FB
+        td
+            text-align: center
     tr:nth-of-type(even)
         background: #F1FAFE
         &:hover
@@ -32,5 +36,5 @@
     .download .container table
         font-size: 80%
         tr:first-of-type td:nth-of-type(2):after
-            content: '(Recommended)'
+            content: ' (Recommended)'
             padding-left: 4px

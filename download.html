@@ -90,9 +90,6 @@
                             '</tr>';
                         $("#dl-lin32").append(row);
                     }
-
-                    debugger;
-                    //version 0.12.0 and beyond is nw.js, before is node-webkit
                 }
             });
         });
@@ -108,15 +105,34 @@
             <section id="downloads">
                 <h2>Downloads</h2>
 
-                <div class="radio-group">
-                    <label><input type="radio" name="os" value="win" />Windows</label>
-                    <label><input type="radio" name="os" value="osx" />OSX</label>
-                    <label><input type="radio" name="os" value="lin" />Linux</label>
-                </div>
+                <div class="text-center">
 
-                <div class="radio-group">
-                    <label><input type="radio" name="arch" value="x86" />32-Bit</label>
-                    <label><input type="radio" name="arch" value="x64" />64-Bit</label>
+                    <div class="radio-group">
+                        <span class="radio">
+                            <input type="radio" id="win" name="os" value="win" />
+                            <label for="win">Windows</label>
+                        </span>
+                        <span class="radio">
+                            <input type="radio" id="osx" name="os" value="osx" />
+                            <label for="osx">OSX</label>
+                        </span>
+                        <span class="radio">
+                            <input type="radio" id="lin" name="os" value="lin" />
+                            <label for="lin">Linux</label>
+                        </span>
+                    </div>
+
+                    <div class="radio-group">
+                        <span class="radio">
+                            <input type="radio" id="x86" name="arch" value="x86" />
+                            <label for="x86">32-Bit</label>
+                        </span>
+                        <span class="radio">
+                            <input type="radio" id="x64" name="arch" value="x64" />
+                            <label for="x64">64-Bit</label>
+                        </span>
+                    </div>
+
                 </div>
 
 <!--

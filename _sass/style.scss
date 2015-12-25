@@ -1,23 +1,24 @@
-@charset "utf-8";               // Character type for the stylesheet
+@charset "utf-8";                   // Character type for the stylesheet
 
 //Import Google Webfont
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,600');
 
 //General Stuff that effects every page
-@import "_var.sass";            // Sass Variables and Mixins - Does not effect page, but other Sass files reference this file.
-@import "_normalize.sass";      // Removes inconsistencies in the way different browsers render items by default. Bootstrap comes with Normalize.
-@import "_global.sass";         // Generalized styles that are site specific
+@import "_var.sass";                // Sass Variables and Mixins - Does not effect page, but other Sass files reference this file.
+@import "_normalize.sass";          // Removes inconsistencies in the way different browsers render items by default. Bootstrap comes with Normalize.
+@import "_global.sass";             // Generalized styles that are site specific
 
 //Specific stuff that effects part of every page
-@import "_header.sass";         // Styles for the header of every page
-@import "_footer.sass";         // Styles for the footer of every page
+@import "_header.sass";             // Styles for the header of every page
+@import "_footer.sass";             // Styles for the footer of every page
 
 //Page specific Styles
-@import "_index.sass";          // Styles for the Home page
-@import "_download.sass";       // Styles for the Downloads page
-@import "_quickstart.sass";     // Styles for the Quickstart page
-@import "_docs.sass";           // Styles for the Docs
+@import "_index.sass";              // Styles for the Home page
+@import "_download.sass";           // Styles for the Downloads page
+@import "_quickstart.sass";         // Styles for the Quickstart page
+@import "_docs.sass";               // Styles for the Docs
 
-//Highlight.js Plugin Styles
-@import "_ven.hljs.default.sass";
-@import "_ven.hljs.mono.blue.sass";
+//Plugins
+@import "_radiogroups.sass";        //Radio Group styles found on codepen
+@import "_ven.hljs.default.sass";   //Highlight.js plugin default styles
+@import "_ven.hljs.mono.blue.sass"; //Highlight.js plugin mono-blue theme
