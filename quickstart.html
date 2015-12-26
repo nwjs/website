@@ -60,7 +60,26 @@
     <header><!-- _markup/header.html --></header>
 
     <div class="container">
-        <div class="content"><!-- _markup/quickstart.md --></div>
+        <div class="content">
+            <section id="controls">
+                <h2>Quick Start</h2>
+
+                <div class="text-center">
+                    <div class="radio-group instructions-group">
+                        <span class="radio">
+                            <input type="radio" id="vanilla" name="instructions" value="vanilla" />
+                            <label for="vanilla" title="I don't have Node.JS installed.">Vanilla</label>
+                        </span>
+                        <span class="radio">
+                            <input type="radio" id="node" name="instructions" value="node" />
+                            <label for="node" title="I have Node.JS installed.">Node.JS</label>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section id="qs-vanilla"><!-- _markup/quickstart.md --></section>
+            <section id="qs-node"><!-- _markup/quickstartnode.md --></section>
+        </div>
     </div>
 
     <footer><!-- _markup/footer.html --></footer>

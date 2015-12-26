@@ -1,5 +1,3 @@
-## Quick Start
-
 Create `index.html`:
 
 ```html
@@ -35,3 +33,9 @@ $ /path/to/nw .  (suppose the current directory contains 'package.json')
 ```bash
 $ /path/to/nwjs.app/Contents/MacOS/nwjs .  (suppose the current directory contains 'package.json')
 ```
+
+* * *
+
+For a more fleshed out version of an NW.js `package.json` file, see this example from [UGUI](http://UGUI.io) (an NW.js framework):
+
+* [UGUI package.json](http://ugui.io/package)
