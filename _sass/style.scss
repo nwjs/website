@@ -13,6 +13,7 @@
 @import "_footer.sass";             // Styles for the footer of every page
 
 //Page specific Styles
+@import "_404.sass";                // Styles for the 404 not found page
 @import "_index.sass";              // Styles for the Home page
 @import "_download.sass";           // Styles for the Downloads page
 @import "_quickstart.sass";         // Styles for the Quickstart page
