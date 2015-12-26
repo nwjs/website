@@ -312,7 +312,7 @@ $(document).ready(function(){
     }
 
     function updateOptionalsVisibility() {
-        $(".symbol, .chromedriver, .mas, .massymbol, .sdksdksymbol, .nacl, .naclsymbol").show();
+        $(".symbol, .chromedriver, .mas, .symbolmas, .sdk, .symbolsdk, .nacl, .symbolnacl").show();
         if (!$("#symbol").prop("checked")) {
             $(".symbol").hide();
         }
