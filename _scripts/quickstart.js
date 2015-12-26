@@ -1,13 +1,10 @@
 
-//Initializes the highlight.js code
+$(document).ready(function(){
+    $.get("_markup/quickstart.md", function (data) {
+        //use "marked" plugin to convert markdown to html and embed on page.
+        $(".content").html( marked(data) );
 
-function findCode(pre) {
-    var node = pre.firstChild;
-    return (node.nodeName == 'CODE' && node.className) ? node : false;
-}
-
-addEventListener('load', function() {
-    Array.prototype.map.call(document.getElementsByTagName('pre'), findCode).
-        filter(Boolean).
-        forEach(function(code){hljs.highlightBlock(code);});
-}, false);
+        //Code syntax highlighting
+        hljs.initHighlighting();
+    });
+});

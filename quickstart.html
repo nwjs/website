@@ -50,6 +50,7 @@
     <!-- Load local jQuery if Google CDN is unreachable -->
     <script type="text/javascript">if (typeof $=='undefined'){document.write(unescape("%3Cscript src='scripts/ven.jquery-2.1.4.min.js'%3E%3C/script%3E"))}</script>
     <script type="text/javascript" src="_scripts/main.js"></script>
+    <script type="text/javascript" src="_scripts/ven.marked.min.js"></script>
     <script type="text/javascript" src="_scripts/ven.highlight.min.js"></script>
     <script type="text/javascript" src="_scripts/quickstart.js"></script>
 
@@ -59,38 +60,7 @@
     <header><!-- _markup/header.html --></header>
 
     <div class="container">
-        <div class="content">
-            <h2 id="quick-start">Quick Start</h2>
-
-            <p>Create <code>index.html</code>:</p>
-
-            <pre><code class="lang-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Hello World!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Hello World!&lt;/h1&gt;
-    We are using node.js &lt;script&gt;document.write(process.version)&lt;/script&gt;.
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-
-            <p>Create <code>package.json</code>:</p>
-
-            <pre><code class="lang-javascript">{
-  "name": "nw-demo",
-  "main": "index.html"
-}</code></pre>
-
-            <p>Run:  </p>
-
-            <pre><code class="lang-bash">$ /path/to/nw .  (suppose the current directory contains 'package.json')</code></pre>
-
-            <p>Note: on Windows, you can drag the folder containing <code>package.json</code> to <code>nw.exe</code> to open it.</p>
-            <p>Note: on OSX, the executable binary is in a hidden directory within the .app file. To run node-webkit on OSX, type:</p>
-
-            <pre><code class="lang-bash">$ /path/to/node-webkit.app/Contents/MacOS/node-webkit .  (suppose the current directory contains 'package.json')</code></pre>
-        </div>
+        <div class="content"><!-- _markup/quickstart.md --></div>
     </div>
 
     <footer><!-- _markup/footer.html --></footer>

@@ -29,9 +29,9 @@ Run:
 $ /path/to/nw .  (suppose the current directory contains 'package.json')
 ```
 
-Note: on Windows, you can drag the folder containing `package.json` to `nw.exe` to open it.
+**Note:** On Windows, you can drag the folder containing `package.json` to `nw.exe` to open it.
 
-Note: on OSX, the executable binary is in a hidden directory within the .app file. To run node-webkit on OSX, type:
+**Note:** On OSX, the executable binary is in a hidden directory within the .app file. To run NW.js on OSX, type:
 ```bash
-$ /path/to/node-webkit.app/Contents/MacOS/node-webkit .  (suppose the current directory contains 'package.json')
+$ /path/to/nwjs.app/Contents/MacOS/nwjs .  (suppose the current directory contains 'package.json')
 ```
