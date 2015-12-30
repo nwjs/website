@@ -1,0 +1,77 @@
+// From: http://codepen.io/andreasnylin/pen/jnpdq
+
+.radio,
+.checkbox
+    position: relative
+    display: inline-block
+    width: 1em
+    height: 1em
+    vertical-align: middle
+    margin: -0.4em 0.4em 0em 0em
+    > label
+        position: absolute
+        top: 0px
+        left: 0px
+        width: 1em
+        height: 1em
+        border: solid 1px #BBB
+        border-radius: 0.1em
+        background: #EEE
+        white-space: nowrap
+        &:hover
+            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05), inset 0px 0px 1px 1px rgba(255, 255, 255, 0.1)
+    > :checked + label:after
+        content: ' '
+        position: absolute
+        top: 0px
+        left: 0px
+        right: 0px
+        bottom: 0px
+        width: 0.5em
+        height: 0.5em
+        background: #BBB
+        border-radius: 0.1em
+        margin: auto
+    input
+        position: absolute
+        top: 0px
+        left: 0px
+        opacity: 0
+
+.radio
+    > label
+        border-radius: 0.5em
+    > :checked + label:after
+        border-radius: 0.25em
+
+.radio-group,
+.checkbox-group
+    +noselect
+    display: inline-block
+    min-height: 39px
+    margin: 0px 6px
+
+// Groups of radio buttons and checkboxes
+.radio-group .radio,
+.checkbox-group .checkbox
+    width: auto
+    min-height: 39px
+    vertical-align: middle
+    margin: 0px
+    > label
+        position: relative
+        width: auto
+        border-radius: 0px
+        margin: 0em -0.2em
+        padding: .4em
+    &:first-child > label
+        border-radius: 0.5em 0em 0em 0.5em
+        margin-left: 0px
+    &:last-child > label
+        border-radius: 0em 0.5em 0.5em 0em
+        margin-right: 0px
+    > :checked + label
+        background: $brand-color
+        color: #EBECED
+    > :checked + label:after
+        content: none

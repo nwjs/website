@@ -1,0 +1,45 @@
+.download .container
+    table
+        width: 100%
+        margin: 16px 0px
+        a
+            color: $brand-color
+            &:hover
+                text-decoration: underline
+    thead tr
+        background: #333
+        color: #F5F5F5
+        font-size: 1.565em
+        line-height: 48px
+        &:hover
+            background: #333
+    tbody
+        tr
+            background: #FFF
+            line-height: 2em
+            &:hover
+                background: #E0F3FB
+        td
+            font-size: 1em
+    tr:nth-of-type(even)
+        background: #F1FAFE
+        &:hover
+            background: #E0F3FB
+    td:first-of-type
+        font-weight: bold
+    .recommended
+        &:hover
+            text-decoration: none
+        &:after
+            content: '(Recommended Version)'
+            color: rgba(0, 0, 0, 0.6)
+            font-size: 0.8em
+            font-style: italic
+            padding: 0px 0px 0px 7px
+
+@media (max-width: 525px)
+    .download .container table
+        font-size: 80%
+        .recommended:after
+            content: ' (Recommended)'
+            padding-left: 4px

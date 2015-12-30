@@ -1,0 +1,31 @@
+{
+    "name": "nwjs-website",
+    "homepage": "https://nwjs.github.io/website",
+    "version": "3.0.0",
+    "author": "The Jared Wilcurt and Daniel Cohen",
+    "description": "The public website for the NW.js open source project.",
+    "keywords": [ "NW.js", "Node-Webkit", "Native Web" ],
+    "maintainers":
+    [
+        {
+            "name": "The Jared Wilcurt",
+            "email": "TheJaredWilcurt@users.noreply.github.com",
+            "web": "http://ugui.io"
+        },
+        {
+            "name": "Daniel Cohen",
+            "email": "dcohenb@gmail.com",
+            "web": "https://github.com/dcohenb"
+        }
+    ],
+    "repository": [{
+        "type": "git",
+        "url": "git://github.com/nwjs/website.git"
+    }],
+    "bugs": "https://github.com/nwjs/website/issues",
+    "license": "ISC",
+    "main": "server.js",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {}
+}

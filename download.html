@@ -50,78 +50,131 @@
     <!-- Load local jQuery if Google CDN is unreachable -->
     <script type="text/javascript">if (typeof $=='undefined'){document.write(unescape("%3Cscript src='scripts/ven.jquery-2.1.4.min.js'%3E%3C/script%3E"))}</script>
     <script type="text/javascript" src="_scripts/main.js"></script>
-    <script>
-        $(document).ready(function(){
-            $.get("config.json", function (configData) {
-
-                $(".version_title").html(configData.version_title);
-                $(".release-notes").attr("href", configData.release_notes);
-
-                function downloadsLoop(num) {
-                    var dlNum = configData["download" + num + "Bit"];
-                    for (var i = 0; i < dlNum.length; i++) {
-                        var link = dlNum[i].link;
-                        var label = dlNum[i].label;
-                        var html = '<a href="' + link + '">' + label + '</a>';
-                        $(".d" + num + "bit").append(html);
-                    }
-                }
-                downloadsLoop("32");
-                downloadsLoop("64");
-            });
-        });
-    </script>
+    <script type="text/javascript" src="_scripts/ven.crossbrowser.min.js"></script>
+    <script type="text/javascript" src="_scripts/ven.64or32-jquery.min.js"></script>
+    <script type="text/javascript" src="_scripts/download.js"></script>
 
 </head>
-<body class="home">
+<body class="download">
 
     <header><!-- _markup/header.html --></header>
 
     <div class="container">
-        <section id="download">
-            <h1>Download <span class="version_title">NW.js</span></h1>
+        <div class="content">
+            <section id="downloads">
+                <h2>Downloads</h2>
 
-            <div class="d32bit"></div>
-            <div class="d64bit"></div>
-            <a class="release-notes" href="#">Release Notes</a>
-        </section>
+                <div class="text-center">
 
-        <section id="github">
-            <a href="https://github.com/nwjs/nw.js">View on <b>GitHub</b></a>
-        </section>
+                    <div class="radio-group os-group">
+                        <span class="radio">
+                            <input type="radio" id="win" name="os" value="win" />
+                            <label for="win">Windows</label>
+                        </span>
+                        <span class="radio">
+                            <input type="radio" id="osx" name="os" value="osx" />
+                            <label for="osx">OSX</label>
+                        </span>
+                        <span class="radio">
+                            <input type="radio" id="lin" name="os" value="lin" />
+                            <label for="lin">Linux</label>
+                        </span>
+                    </div>
 
-        <section id="features">
-            <p><em><a href="https://groups.google.com/d/msg/nwjs-general/V1FhvfaFIzQ/720xKVd0jNkJ">Formerly known as "Node-Webkit".</a></em></p>
-            <h2>NW.js lets you call all Node.js modules directly from DOM and enables a new way of writing applications with
-                all Web technologies.</h2>
-            <ul>
-                <li>
-                    <img src="_img/icon_code.png" alt="Code" />
-                    <p>New way of writing native applications with the web's most popular technologies.</p>
-                </li>
-                <li>
-                    <img src="_img/icon_tech.png" alt="Technology" />
-                    <p>Apps written in modern HTML5, CSS3, JS, and WebGL.</p>
-                </li>
-                <li>
-                    <img src="_img/icon_connect.png" alt="Connect" />
-                    <p>Complete support for Node.js APIs and all third party modules.</p>
-                </li>
-                <li>
-                    <img src="_img/icon_puzzle.png" alt="Puzzle" />
-                    <p>Call Node.js modules directly from the DOM.</p>
-                </li>
-                <li>
-                    <img src="_img/icon_instances.png" alt="Instances" />
-                    <p>Easy to package and distribute apps.</p>
-                </li>
-                <li>
-                    <img src="_img/icon_platforms.png" alt="Platforms" />
-                    <p>Available on Windows, OSX, &amp; Linux.</p>
-                </li>
-            </ul>
+                    <div class="radio-group arch-group">
+                        <span class="radio">
+                            <input type="radio" id="x86" name="arch" value="x86" />
+                            <label for="x86">32-Bit</label>
+                        </span>
+                        <span class="radio">
+                            <input type="radio" id="x64" name="arch" value="x64" />
+                            <label for="x64">64-Bit</label>
+                        </span>
+                    </div>
 
-        </section>
+                    <div class="checkbox-group">
+                        <span class="checkbox">
+                            <input type="checkbox" id="symbol" name="optionals" checked />
+                            <label for="symbol">Symbol</label>
+                        </span>
+                        <span class="checkbox">
+                            <input type="checkbox" id="chromedriver" name="optionals" checked />
+                            <label for="chromedriver">Chrome Driver</label>
+                        </span>
+                        <span class="checkbox">
+                            <input type="checkbox" id="mas" name="optionals" checked />
+                            <label for="mas">MAS</label>
+                        </span>
+                        <span class="checkbox">
+                            <input type="checkbox" id="symbolmas" name="optionals" checked />
+                            <label for="symbolmas">MAS Symbol</label>
+                        </span>
+                        <span class="checkbox">
+                            <input type="checkbox" id="sdk" name="optionals" checked />
+                            <label for="sdk">SDK</label>
+                        </span>
+                        <span class="checkbox">
+                            <input type="checkbox" id="symbolsdk" name="optionals" checked />
+                            <label for="symbolsdk">SDK Symbol</label>
+                        </span>
+                        <span class="checkbox">
+                            <input type="checkbox" id="nacl" name="optionals" checked />
+                            <label for="nacl">NACL</label>
+                        </span>
+                        <span class="checkbox">
+                            <input type="checkbox" id="symbolnacl" name="optionals" checked />
+                            <label for="symbolnacl">NACL Symbol</label>
+                        </span>
+                    </div>
+
+                </div>
+
+                <p>
+                    <a class="button" href="https://groups.google.com/d/msg/nwjs-general/Z1V9cmfPhRQ/loZtWc6pDAAJ">Beta versions of 0.13.0 supports Chrome App now</a><br />
+                    <a href="http://dl.nwjs.io/live-build/">Live builds from git tip</a> are available for testing.
+                </p>
+
+                <table id="dl-win32">
+                    <thead>
+                        <tr><th colspan="8">Window 32-Bit Downloads</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <table id="dl-win64">
+                    <thead>
+                        <tr><th colspan="8">Window 64-Bit Downloads</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <table id="dl-osx32">
+                    <thead>
+                        <tr><th colspan="8">OSX 32-Bit Downloads</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <table id="dl-osx64">
+                    <thead>
+                        <tr><th colspan="10">OSX 64-Bit Downloads</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <table id="dl-lin32">
+                    <thead>
+                        <tr><th colspan="8">Linux 32-Bit Downloads</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <table id="dl-lin64">
+                    <thead>
+                        <tr><th colspan="8">Linux 64-Bit Downloads</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+            </section>
+        </div>
     </div>
 
     <footer><!-- _markup/footer.html --></footer>

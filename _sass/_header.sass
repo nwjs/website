@@ -1,0 +1,41 @@
+header
+    min-height: 203px
+    .logo-wrapper
+        height: 168px
+        background: $brand-color url('../_img/header_l.png') no-repeat left top
+        position: relative
+        text-align: center
+        display: block
+        &:after
+            content: ''
+            position: absolute
+            top: 0px
+            right: 0px
+            width: 184px
+            display: block
+            height: 100%
+            background: url('../_img/header_r.png') no-repeat right top
+        img.logo
+            position: relative
+            margin: 38px auto 0px auto
+            z-index: 1
+    nav
+        background: #333
+        min-height: 35px
+        color: $text-light-color
+        line-height: 35px
+        text-align: center
+        a
+            text-transform: uppercase
+            transition: 0.25s ease all
+            border-bottom: 1px solid rgba(255, 255, 255, 0)
+            &:hover
+                border-color: rgba(255, 255, 255, 0.35)
+
+.home .home,
+.quickstart .quickstart,
+.downloads .downloads,
+.documentation .documentation
+    border-color: rgba(255, 255, 255, 0.55)
+    &:hover
+        border-color: rgba(255, 255, 255, 0.9)
