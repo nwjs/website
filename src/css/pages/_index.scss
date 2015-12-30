@@ -8,28 +8,25 @@
             margin: 0;
             font-weight: normal;
         }
-        .d32bit, .d64bit {
-            a {
-                display: inline-block;
-                background: url("/img/download_32.png") no-repeat;
-                width: 120px;
-                line-height: 42px;
-                padding-left: 35px;
-                height: 42px;
-                text-align: center;
-                font-size: 0.9em;
-                margin: 5px;
+        .dlbtnlist {
+            display: flex;
+            justify-content: center;
+
+            .d32bit, .d64bit {
+                a {
+                    display: inline-block;
+                    background: $brand-color;
+                    border: 2px solid $brand-color;
+                    border-radius: 5px;
+                    width: 180px;
+                    line-height: 1.5;
+                    height: 3em;
+                    text-align: center;
+                    font-size: 1em;
+                    margin: 5px;
+                }
             }
-        }
-        .d32bit {
-            margin-top: 20px;
-        }
-        .d64bit {
-            margin-bottom: 20px;
-            a {
-                background-image: url('/img/download_64.png');
-            }
-        }
+       }
 
         .release-notes {
             opacity: 0.5;

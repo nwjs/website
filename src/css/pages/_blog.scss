@@ -1,4 +1,4 @@
-.container.quickstart {
+.container.blog {
 	background: url('/img/bg_pattern_light.png');
 	padding: 0;
 	.content {
@@ -6,5 +6,9 @@
 		background: #ffffff;
 		margin: 0 auto;
 		padding: 10px 30px;
+
+    a {
+      color: #15c;
+    }
 	}
 }

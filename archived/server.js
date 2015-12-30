@@ -9,6 +9,8 @@ var express = require('express'),
     marked = require('marked'),
     app = express();
 
+var port = process.env.PORT || 8080;
+
 // Express uses
 app.use(compression()); // Compression (Gzip)
 app.use(express.static(__dirname + '/public'));
@@ -45,5 +47,5 @@ app.get('/docs', function(req, res) {
     res.render('pages/docs', config);
 });
 
-app.listen(80);
-console.log('Express.js server is listening on http://localhost:80');
+app.listen(port);
+console.log('Express.js server is listening on http://localhost:' + port);

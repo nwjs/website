@@ -19,6 +19,7 @@ header {
 
         img.logo {
             margin: 20px auto;
+            vertical-align: middle;
         }
     }
 
@@ -31,5 +32,11 @@ header {
         a {
             text-transform: uppercase;
         }
+    }
+
+    .big-title {
+        font-size: 72px;
+        color: $text-light-color;
+        vertical-align: middle;
     }
 }
