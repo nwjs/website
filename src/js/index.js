@@ -40,7 +40,6 @@ var DownloadButton = React.createClass({
 var DownloadArea = React.createClass({
   render: function() {
     var props = this.props;
-    console.log(props.files);
     var btnList = this.props.flavors.filter(function(flavor){
       return (!isMas(flavor) || props.os === 'osx') && props.files.indexOf(props.os + '-' + props.arch) >= 0;
     }).map(function(flavor, i) {
