@@ -1,46 +1,40 @@
 .container.download {
-	background: url('/img/bg_pattern_light.png');
-	padding: 0;
-	.content {
-		width: 1000px;
-		margin: 0 auto;
-		padding: 10px 30px;
-
-    nav {
-      padding: 5px;
-      text-align: center;
-
-      h3 {
-        display: inline;
-      }
-
-      > * {
-        border: 1px solid $brand-color;
-        display: inline-block;
-        padding: 5px;
-        width: 150px;
-      }
-
-      > .selected {
-        background-color: $brand-color;
-        color: $text-light-color;
-      }
+    background: url('/img/bg_pattern_light.png');
+    padding: 0px;
+    .content {
+        width: 1000px;
+        margin: 0px auto;
+        padding: 10px 30px;
+        nav {
+            padding: 5px;
+            text-align: center;
+            h3 {
+                display: inline;
+            }
+            > * {
+                border: 1px solid $brand-color;
+                display: inline-block;
+                padding: 5px;
+                width: 150px;
+            }
+            > .selected {
+                background-color: $brand-color;
+                color: $text-light-color;
+            }
+        }
+        table {
+            border-spacing: 5px;
+            border-collapse: separate;
+            width: 100%;
+            td {
+                border: 1px solid black;
+                padding: 2px 5px;
+                text-align: center;
+            }
+        }
     }
-
-    table {
-      border-spacing: 5px;
-      border-collapse: separate;
-      width: 100%;
-
-      td {
-        border: 1px solid black;
-        padding: 2px 5px;
+    h1 {
         text-align: center;
-      }
+        margin: 0px;
     }
-	}
-  h1 {
-    text-align: center;
-    margin: 0px;
-  }
 }
