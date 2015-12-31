@@ -8,10 +8,17 @@ body {
 	a {
 		color: inherit;
 		text-decoration: none;
+
 		&:hover {
 
 		}
 	}
+
+  .content {
+    a {
+      color: #15c;
+    }
+  }
 }
 
 @import "global";

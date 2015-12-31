@@ -5,37 +5,42 @@
 		width: 1000px;
 		margin: 0 auto;
 		padding: 10px 30px;
+
+    nav {
+      padding: 5px;
+      text-align: center;
+
+      h3 {
+        display: inline;
+      }
+
+      > * {
+        border: 1px solid $brand-color;
+        display: inline-block;
+        padding: 5px;
+        width: 150px;
+      }
+
+      > .selected {
+        background-color: $brand-color;
+        color: $text-light-color;
+      }
+    }
+
+    table {
+      border-spacing: 5px;
+      border-collapse: separate;
+      width: 100%;
+
+      td {
+        border: 1px solid black;
+        padding: 2px 5px;
+        text-align: center;
+      }
+    }
 	}
   h1 {
     text-align: center;
-  }
-  .nav {
-    text-algin: center;
-
-    nav {
-      display: inline-block;
-      padding: 2px 5px;
-
-      > * {
-        border-color: $brand-color;
-        border-style: solid;
-        border-width: 1px 0px;
-        display: inline-block;
-      }
-
-      > *:first-child {
-        border-radius: 5px 0px 0px 5px;
-        border-left-width: 1px;
-      }
-
-      > *:last-child {
-        border-radius: 0px 5px 5px 0px;
-        border-right-width: 1px;
-      }
-
-      > *.selected {
-        border-width: 1px;
-      }
-    }
+    margin: 0px;
   }
 }
