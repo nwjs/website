@@ -6,6 +6,7 @@
     case 'win-ia32':
       return '.zip';
     case 'osx-x64':
+    case 'osx-ia32':
       return '.zip';
     case 'linux-x64':
     case 'linux-ia32':
@@ -16,6 +17,7 @@
   var file2name = {
     'win-ia32'  : 'Windows 32-bit',
     'win-x64'   : 'Windows 64-bit',
+    'osx-ia32'  : 'Mac OS X 32-bit',
     'osx-x64'   : 'Mac OS X 64-bit',
     'linux-x64' : 'Linux 64-bit',
     'linux-ia32': 'Linux 32-bit'
