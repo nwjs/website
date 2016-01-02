@@ -1,5 +1,5 @@
 <img src="public/img/logo.png" title="nwjs.io" alt="NW.js Logo" align="left" height="128" />
-# nwjs.io
+# [nwjs.io](http://nwjs.io)
 
 This is the source for the NW.js public website.
 
