@@ -1,20 +1,20 @@
 {
-  "name": "nw-website",
-  "version": "0.0.1",
-  "homepage": "https://github.com/nwjs/website",
-  "authors": [
-    "Daniel Cohen <dcohenb@gmail.com>"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "normalize.css": "~3.0.2",
-    "react": "~0.14.4"
-  }
+    "name": "nw-website",
+    "version": "0.0.1",
+    "homepage": "https://github.com/nwjs/website",
+    "authors": [
+        "Daniel Cohen <dcohenb@gmail.com>"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "normalize.css": "~3.0.2",
+        "react": "~0.14.4"
+    }
 }

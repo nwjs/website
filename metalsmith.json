@@ -1,49 +1,49 @@
 {
-  "source": "src",
-  "destination": "build",
-  "plugins": {
-    "metalsmith-static": {
-      "src" : "public",
-      "dest": "."
-    },
-    "metalsmith-metadata": {
-      "config": "config.json"
-    },
-    "metalsmith-collections": {
-      "blogs": {
-        "pattern": "blog/**/*.md",
-        "sortBy": "date",
-        "reverse": true,
-        "refer": false
-      }
-    },
-    "metalsmith-markdown": true,
-    "metalsmith-babel": {
-      "presets": [
-        "react"
-      ],
-      "comments": true
-    },
-    "metalsmith-sass": {
-      "outputStyle": "expanded"
-    },
-    "metalsmith-permalinks": {
-      "relative": false
-    },
-    "metalsmith-prism": true,
-    "metalsmith-layouts": {
-      "directory": "templates/layouts",
-      "partials": "templates/partials",
-      "engine"  : "handlebars",
-      "default" : "blog-layout.hbs",
-      "pattern": ["**/*.md", "**/*.html"]
-    },
-    "metalsmith-in-place": {
-      "directory": "templates/layouts",
-      "partials": "templates/partials",
-      "engine"  : "handlebars",
-      "default" : "blog-layout.hbs",
-      "pattern": ["**/*.md", "**/*.html"]
+    "source": "src",
+    "destination": "build",
+    "plugins": {
+        "metalsmith-static": {
+            "src" : "public",
+            "dest": "."
+        },
+        "metalsmith-metadata": {
+            "config": "config.json"
+        },
+        "metalsmith-collections": {
+            "blogs": {
+                "pattern": "blog/**/*.md",
+                "sortBy": "date",
+                "reverse": true,
+                "refer": false
+            }
+        },
+        "metalsmith-markdown": true,
+        "metalsmith-babel": {
+            "presets": [
+                "react"
+            ],
+            "comments": true
+        },
+        "metalsmith-sass": {
+            "outputStyle": "expanded"
+        },
+        "metalsmith-permalinks": {
+            "relative": false
+        },
+        "metalsmith-prism": true,
+        "metalsmith-layouts": {
+            "directory": "templates/layouts",
+            "partials": "templates/partials",
+            "engine"  : "handlebars",
+            "default" : "blog-layout.hbs",
+            "pattern": ["**/*.md", "**/*.html"]
+        },
+        "metalsmith-in-place": {
+            "directory": "templates/layouts",
+            "partials": "templates/partials",
+            "engine"  : "handlebars",
+            "default" : "blog-layout.hbs",
+            "pattern": ["**/*.md", "**/*.html"]
+        }
     }
-  }
 }
