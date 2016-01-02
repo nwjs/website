@@ -1,0 +1,23 @@
+# Install Editor Config in your Text Editor/IDE
+# to automatically maintain codebase consistency.
+#
+# EditorConfig.org
+
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+insert_final_newline = true
+
+# CSS and JS files
+[*.{css,sass,scss,js,json}]
+charset = utf-8
+indent_style = space
+indent_size = 4
+
+# HTML files
+[*.{html,hbs,ejs}]
+indent_style = space
+indent_size = 2
