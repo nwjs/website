@@ -2,18 +2,21 @@
 
 var matched = navigator.platform.match(/Win|Mac|Linux/i);
 var os = matched ? matched[0].toLowerCase() : 'linux';
+if (os === 'mac') {
+    os = 'osx';
+}
 matched = navigator.userAgent.match(/x86_64|Win64|WOW64/i);
-var arch = matched || os === 'mac' ? 'x64' : 'ia32';
+var arch = matched || os === 'osx' ? 'x64' : 'ia32';
 
 var os2name = {
     'win': 'Windows',
-    'mac': 'Mac OS X',
+    'osx': 'Mac OS X',
     'linux': 'Linux'
 };
 
 var os2ext = {
     'win': '.zip',
-    'mac': '.zip',
+    'osx': '.zip',
     'linux': '.tar.gz'
 }
 
