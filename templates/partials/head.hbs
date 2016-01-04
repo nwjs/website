@@ -5,6 +5,10 @@
 <meta name="keywords" content="nw.js, nwjs, nw js, node-webkit, node, node.js, chrome, chromium, javascript">
 
 <title>{{{title}}}</title>
+<!-- feeds -->
+{{#each config.feeds}}
+<link rel="alternate" href="/{{ link }}" title="{{ text }}" type="application/rss+xml">
+{{/each}}
 <!-- stylesheets -->
 <link href="/lib/normalize.css/normalize.css" rel="stylesheet" type="text/css">
 <link href="/css/style.css" rel="stylesheet" type="text/css">

@@ -1,6 +1,11 @@
 {
     "source": "src",
     "destination": "build",
+    "metadata": {
+        "site": {
+            "url": "http://nwjs.io/"
+        }
+    },
     "plugins": {
         "metalsmith-static": {
             "src" : "public",
@@ -44,6 +49,11 @@
             "engine"  : "handlebars",
             "default" : "blog-layout.hbs",
             "pattern": ["**/*.md", "**/*.html"]
+        },
+        "metalsmith-feed": {
+            "collection": "blogs",
+            "destination": "feed/blog.xml",
+            "title": "NW.js Blog"
         }
     }
 }
