@@ -6,12 +6,15 @@ layout: layout.hbs
     <div class="download">
         <div class="download-area" data-use="stable" data-base-url="{{{config.links.download}}}"></div>
         <div class="download-area" data-use="latest" data-base-url="{{{config.links.download}}}"></div>
+        {{#if config.latest_new}}
+        <h4>{{{config.latest_new}}}</h4>
+        {{/if}}
     </div>
     <div class="github">
         <a href="{{{config.links.github}}}">View on <b>GitHub</b></a>
     </div>
     <div class="features">
-        <h2>NW.js lets you call all Node.js modules directly from DOM and enables a new way of writing applications with
+        <h2>NW.js (previously known as Node-Webkit) lets you call all Node.js modules directly from DOM and enables a new way of writing applications with
             all Web technologies.</h2>
         <ul>
             <li>
