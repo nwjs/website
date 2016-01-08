@@ -4,8 +4,6 @@
 This is the source for the NW.js public website.
 
 
-* * *
-
 
 **To contribute**:
 
@@ -16,8 +14,6 @@ This is the source for the NW.js public website.
 5. Follow other instructions if they are relavent to your contribution.
 6. Submit Pull Requests against the `develop` branch.
 
-
-* * *
 
 
 ## Prerequisites
@@ -50,8 +46,6 @@ We use "editorconfig" to help maintain code consistency across different IDE's.
 2. Click on your IDE/Text Editor of Choice and follow the instructions
 
 
-* * *
-
 
 ## Run the site
 
@@ -68,8 +62,6 @@ npm run serve
 Then open [localhost:3000](http://localhost:3000) in your browser.
 
 
-* * *
-
 
 ## Build the website
 
@@ -82,23 +74,17 @@ npm run build
 The website will be built and stored in the `build` directory.
 
 
-* * *
-
 
 ## Add New Blog
 
 Just write a new markdown in `src/blog` and it will automatically generate the pages. Then you have to **reload your browser** to see the changes.
 
 
-* * *
-
 
 ## Add New Downloads
 
 Edit `/src/versions.json` and append your new versions of downloads and switch `stable` or `latest` to your new version number. Then reload your browser to see the changes.
 
-
-* * *
 
 
 ## Update Google Analytics

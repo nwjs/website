@@ -11,13 +11,8 @@ root = true
 [*]
 insert_final_newline = true
 
-# CSS and JS files
-[*.{css,sass,scss,js,json}]
+# CSS, JS, and HTML files
+[*.{css,sass,scss,js,json,html,hbs,ejs}]
 charset = utf-8
 indent_style = space
 indent_size = 4
-
-# HTML files
-[*.{html,hbs,ejs}]
-indent_style = space
-indent_size = 2
