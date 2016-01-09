@@ -22,7 +22,9 @@
                 "refer": false
             }
         },
-        "metalsmith-markdown": true,
+        "metalsmith-markdown": {
+            "langPrefix": "language-" 
+        },
         "metalsmith-babel": {
             "presets": [
                 "react"
@@ -32,10 +34,10 @@
         "metalsmith-sass": {
             "outputStyle": "expanded"
         },
+        "metalsmith-prism": true,
         "metalsmith-permalinks": {
             "relative": false
         },
-        "metalsmith-prism": true,
         "metalsmith-layouts": {
             "directory": "templates/layouts",
             "partials": "templates/partials",
