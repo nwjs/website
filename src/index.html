@@ -4,8 +4,8 @@ layout: layout.hbs
 ---
 <div class="container home">
     <div class="download">
-        <div class="download-area" data-use="stable" data-base-url="{{{config.links.download}}}"></div>
         <div class="download-area" data-use="latest" data-base-url="{{{config.links.download}}}"></div>
+        <div class="download-area" data-use="stable" data-base-url="{{{config.links.download}}}"></div>
         {{#if config.latest_new}}
         <h4>{{{config.latest_new}}}</h4>
         {{/if}}
