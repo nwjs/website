@@ -75,7 +75,7 @@
 
     var Downloads = React.createClass({
         getInitialState: function() {
-            return {version: 'stable'};
+            return {version: 'latest'};
         },
         render: function() {
             var versions = this.props.versions;
