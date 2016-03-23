@@ -126,3 +126,7 @@ Thanks to the following people for their contributions to the release:
 * Chase Willden: porting APIs
 * Adam Lynch, Mithgol, Kyle Robinson Young, Steffen Müller, etc for package tools
 * And to all the people who submit bug reports, wiki docs and answering questions in mailing list and gitter channel!
+
+## Discussion
+
+See our mailing list to discuss on this article: https://groups.google.com/d/msg/nwjs-general/RZ0e1Jsj0zI/PifVr6TgAgAJ
