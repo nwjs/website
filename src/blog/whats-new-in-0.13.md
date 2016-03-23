@@ -28,8 +28,8 @@ In previous 0.12 version we started to support chrome.webRequest API to let you 
 
 With rich notifications you can put buttons, lists, images, icon and progress bar in the notification.
 
-![notification](../images/noti1.png "Rich Notification")
-![notification](../images/noti2.png "Rich Notification")  
+![notification](/images/noti1.png "Rich Notification")
+![notification](/images/noti2.png "Rich Notification")  
 *Rich notifications*
 
 See the upstream docs for the listing of chrome APIs: we support all `chrome.*` API in the [Chrome App platform](https://developer.chrome.com/apps/api_index). In addition, we support some chrome.* API in the [Extension Platform](https://developer.chrome.com/extensions/api_index). There is document tracks the [list of them](http://docs.nwjs.io/en/v0.13.0/References/Chrome%20Extension%20APIs/).
@@ -56,13 +56,13 @@ The native security model tries to provide you the maximum capability as in a tr
 
 NW.js application develpers have been asking for more browser features and compatibility between NW.js and Chromium upstream. With the new browser component based architecuture *(see "under the hood" section below)*, we are now able to provide many features in the Chromium browser, including print preview, PDF viewer and SSL client certificates. Below are some samples:
 
-[![pdf](../images/pdf-s.png "PDF viewer")](../images/pdf.png)  
+[![pdf](/images/pdf-s.png "PDF viewer")](/images/pdf.png)  
 *The built-in PDF viewer*
 
-[![print](../images/print-s.png "Print Preview")](../images/print.png)  
+[![print](/images/print-s.png "Print Preview")](/images/print.png)  
 *Print Preview*
 
-[![clipper](../images/nw-clipper.jpg "Clipper made with NW by Adam Lynch")](http://engineroom.teamwork.com/resurrecting-clippy/)  
+[![clipper](/images/nw-clipper.jpg "Clipper made with NW by Adam Lynch")](http://engineroom.teamwork.com/resurrecting-clippy/)  
 *[Clipper made by Adam Lynch](http://engineroom.teamwork.com/resurrecting-clippy/) with the Transparency feature in NW*
 
 
@@ -74,12 +74,12 @@ Native modules built for Node.js can be loaded into NW.js now. The previous tool
 
 NW.js is now able to fully support devtools extensions, including the one for ReactJS etc. To use them, see [the guide here](http://docs.nwjs.io/en/v0.13.0-beta7/For%20Users/Debugging%20with%20DevTools/#using-devtools-extensions).
 
-[![react devtools](../images/react-s.png "React Devtools Extension")](../images/react.png)  
+[![react devtools](/images/react-s.png "React Devtools Extension")](/images/react.png)  
 *Debugging React App easily with React Devtools Extension*
 
 A method is added to webview tag, so you can launch devtools for this webview. Besides opening a new devtools window, You can also place the devtools UI in a webview. This enables IDE software for better UI. See [the doc](http://docs.nwjs.io/en/v0.13.0-beta7/References/webview%20Tag/#webviewshowdevtoolsshow-container) for more information.
 
-[![embedding devtools](../images/devtools-s.png "Embedding Devtools in your application")](../images/devtools.png)  
+[![embedding devtools](/images/devtools-s.png "Embedding Devtools in your application")](/images/devtools.png)  
 *A sample IDE for debugging mobile web page on the desktop*
 
 ## Content Verification
@@ -106,7 +106,7 @@ In this mode, Node.js objects and DOM objects reside in the same Context (thus w
 
 Under the hood for this improvement is the effort made by upstream to move the extension mechanism towards the Content layer, as well as componentizing the [browser modules](https://www.chromium.org/developers/design-documents/browser-components). NW will evolve with upstream towards the “app shell” architecture. In future we’ll split the browser components as separate loadable modules so the binary size can be shrunk significantly.
 
-[![arch](../images/arch-s.png)](../images/arch.png)  
+[![arch](/images/arch-s.png)](/images/arch.png)  
 *NW13 architecture*
 
 We are also using it to refactor the implementation of ‘nw.gui’ library in 0.12. The extension mechanism provide a lightweight and elegant solution for JS API binding. With it we are able to eliminate the overhead of additional IPC messages used in previous version. 
