@@ -54,7 +54,7 @@ var DownloadArea = React.createClass({
             <div className="dlbtnlist">
             {btnList}
             </div>
-            <a className="release-notes" href={'/blog/' + props.version}>Release Notes</a>
+            <a className="release-notes" href={'/blog/' + props.version + '/'}>Release Notes</a>
         </div>;
     }
 });
