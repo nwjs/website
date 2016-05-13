@@ -78,13 +78,20 @@
             return {version: 'stable'};
         },
         render: function() {
+            var self = this;
             var versions = this.props.versions;
             var baseUrl = this.props.base;
+            var versionList = [['stable', 'Stable'], ['latest', 'Latest'], ['lts', 'LTS']]
+            .filter(function(pair) {
+                return !!versions[pair[0]];
+            })
+            .map(function(pair) {
+                var version = pair[0];
+                var text = pair[1];
+                return <a href="#" className={self.state.version === version ? 'selected': ''} onClick={self.toggleVersion.bind(self, version)}><h3>{text}</h3><br/>{versions[version]}</a>;
+            });
             return <div>
-                <nav>
-                    <a href="#" className={this.state.version === 'stable'? 'selected': ''} onClick={this.toggleVersion}><h3>Stable</h3><br/>{versions.stable}</a>
-                    <a href="#" className={this.state.version === 'latest'? 'selected': ''} onClick={this.toggleVersion}><h3>Latest</h3><br/>{versions.latest}</a>
-                </nav>
+                <nav>{versionList}</nav>
                 <DownloadMatrix base={baseUrl} version={findVersion(versions, versions[this.state.version])}/>
                 <ul>
                     <li><a href={baseUrl + '/' + versions[this.state.version] + '/'}>Other downloads</a> for {versions[this.state.version]}</li>
@@ -93,13 +100,8 @@
                 </ul>
             </div>;
         },
-        toggleVersion: function(e) {
-            var version = this.state.version;
-            if (version === 'stable') {
-                this.setState({version: 'latest'});
-            } else {
-                this.setState({version: 'stable'});
-            }
+        toggleVersion: function(version, e) {
+            this.setState({version: version});
             e.preventDefault();
         }
     });
