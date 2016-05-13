@@ -1,8 +1,13 @@
 {
-    "latest": "v0.15.0-rc1",
+    "latest": "v0.15.0-rc2",
     "stable": "v0.14.5",
     "lts": "v0.14.5",
     "versions": [
+        {
+            "version": "v0.15.0-rc2",
+            "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
+            "flavors": ["normal", "sdk"]
+        },
         {
             "version": "v0.14.5",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
