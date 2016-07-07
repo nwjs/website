@@ -4,6 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "gulp serve",
+    "postinstall": "bower install",
     "serve": "gulp serve",
     "build": "metalsmith"
   },
@@ -41,6 +43,7 @@
     "metalsmith-static": "0.0.5"
   },
   "devDependencies": {
+    "bower": "^1.7.x",
     "gulp": "^3.9.0",
     "gulp-run": "^1.6.12",
     "st": "^1.1.0"
