@@ -1,35 +1,34 @@
 # README
 ---
 
-## Build Website in Local
+## Running Locally
 
-You need **Node.js 5.x** with `npm` and `bower` to build this website.
+### Prerequisties:
 
-Run:
+* [Node.js 5 or above](http://nodejs.org) (with npm)
 
-```bash
-npm install
-bower install
-npm run serve
-```
+### Instructions
 
-Then open http://localhost:3000/ with your browser.
+1. `npm install`
+1. `npm start`
+1. Go to [localhost:3000](http://localhost:3000)
 
-If you just want to build the website, run
 
-```bash
-npm run build
-```
+## Build
 
-And you will get generated website in `build` directory.
+1. `npm run build`
+1. The site will be generated in the `build` directory.
+
 
 ## Add New Blog
 
 Just write a new markdown in `src/blog` and it will automatically generate the pages. Then you have to **reload your browser** to see the changes.
 
+
 ## Add New Downloads
 
 Edit `src/versions.json` and append your new versions of downloads and switch `stable` or `latest` to your new version number. Then reload your browser to see the changes.
+
 
 ## Update Google Analytics
 
