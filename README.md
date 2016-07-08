@@ -14,7 +14,7 @@
 1. Go to [localhost:3000](http://localhost:3000)
 
 
-## Build
+## Build Instructions
 
 1. `npm run build`
 1. The site will be generated in the `build` directory.
