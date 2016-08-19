@@ -20,3 +20,5 @@ $ /path/to/nw.exe <folder path of the manifest.json file>
 or drag the folder to the NW executable. And of course Node.js APIs can be accessed from Chrome App: add “node” permission to manifest.json and you are ready to call nw.require().
 
 For more information, see [What's new in 0.13](/blog/whats-new-in-0.13)
+
+See our mailing list to discuss on this post: https://groups.google.com/d/msg/nwjs-general/UYqoXHFMMag/-UPXaFMABAAJ
