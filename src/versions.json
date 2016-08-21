@@ -1,8 +1,13 @@
 {
-    "latest": "v0.17.0-beta1",
+    "latest": "v0.17.0-beta2",
     "stable": "v0.16.1",
     "lts": "v0.14.7",
     "versions": [
+        {
+            "version": "v0.17.0-beta2",
+            "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
+            "flavors": ["normal", "sdk"]
+        },
         {
             "version": "v0.17.0-beta1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
