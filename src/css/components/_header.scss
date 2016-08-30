@@ -1,31 +1,21 @@
 header {
     .logo-wrapper {
         height: 168px;
-        background: $brand-color url('/img/header_l.png') no-repeat left top;
+        background: url('/img/header_l.png') no-repeat left top, url('/img/header_r.png') no-repeat right top;
+        background-color: $brand-color;
         position: relative;
         text-align: center;
-        display: block;
-
-        &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 184px;
-            height: 100%;
-            background: url('/img/header_r.png') no-repeat right top;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img.logo {
-            margin: 20px auto;
             vertical-align: middle;
         }
     }
 
     nav {
         background: #333333;
-        height: 35px;
         line-height: 35px;
         color: $text-light-color;
         text-align: center;
@@ -38,5 +28,6 @@ header {
         font-size: 72px;
         color: $text-light-color;
         vertical-align: middle;
+        line-height: 168px;
     }
 }

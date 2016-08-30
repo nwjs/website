@@ -11,6 +11,8 @@
         .dlbtnlist {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+
             .d32bit,
             .d64bit {
                 a {
@@ -26,7 +28,7 @@
                     margin: 5px;
                 }
             }
-       }
+        }
         .release-notes {
             opacity: 0.5;
         }
@@ -39,13 +41,14 @@
         color: #FFF;
     }
     .features {
-        width: 900px;
         margin: 0px auto;
         padding: 20px 0px;
         ul {
             list-style: none;
-            width: 900px;
             text-align: center;
+            padding: 0px;
+            max-width: 900px;
+            margin: auto;
             li {
                 display: inline-block;
                 width: 250px;
