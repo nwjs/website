@@ -2,12 +2,13 @@
     background: url('/img/bg_pattern_light.png');
     padding: 0px;
     .content {
-        width: 1000px;
         margin: 0px auto;
         padding: 10px 30px;
         nav {
             padding: 5px;
             text-align: center;
+            display: flex;
+            flex-wrap: wrap;
             h3 {
                 display: inline;
             }
@@ -15,7 +16,7 @@
                 border: 1px solid $brand-color;
                 display: inline-block;
                 padding: 5px;
-                width: 150px;
+                flex: 1;
             }
             > .selected {
                 background-color: $brand-color;
