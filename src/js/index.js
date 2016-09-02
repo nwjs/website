@@ -49,12 +49,18 @@ var DownloadArea = React.createClass({
             return <DownloadButton key={i} os={props.os} base={props.base} arch={props.arch} version={props.version} flavor={flavor} />;
         });
         var use = props.use.charAt(0).toUpperCase() + props.use.substring(1);
+
+        // to be removed
+        // workaround broken release notes url for specific version
+        var version = props.version;
+        if (version === 'v0.17.0') version = '0.17.0';
+
         return <div className="os">
             <h1>Download <em>{use}</em> for {os2name[props.os]} ({props.arch})</h1>
             <div className="dlbtnlist">
             {btnList}
             </div>
-            <a className="release-notes" href={'/blog/' + props.version + '/'}>Release Notes</a>
+            <a className="release-notes" href={'/blog/' + version + '/'}>Release Notes</a>
         </div>;
     }
 });
