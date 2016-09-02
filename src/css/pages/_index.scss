@@ -1,3 +1,5 @@
+$max-feature-width: 900px;
+
 .container.home {
 	text-align: center;
     .download {
@@ -43,11 +45,15 @@
     .features {
         margin: 0px auto;
         padding: 20px 0px;
+        h2 {
+            max-width: $max-feature-width;
+            margin: auto;
+        }
         ul {
             list-style: none;
             text-align: center;
             padding: 0px;
-            max-width: 900px;
+            max-width: $max-feature-width;
             margin: auto;
             li {
                 display: inline-block;
