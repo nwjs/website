@@ -81,14 +81,34 @@
             var self = this;
             var versions = this.props.versions;
             var baseUrl = this.props.base;
+            var ltsNotes = '(Windows XP / Vista and Mac OS X 10.6 ~ 10.8)';
             var versionList = [['stable', 'Stable'], ['latest', 'Latest'], ['lts', 'LTS']]
             .filter(function(pair) {
                 return !!versions[pair[0]];
             })
             .map(function(pair) {
-                var version = pair[0];
+                var use = pair[0];
                 var text = pair[1];
-                return <a href="#" className={self.state.version === version ? 'selected': ''} onClick={self.toggleVersion.bind(self, version)}><h3>{text}</h3><br/>{versions[version]}</a>;
+                var idx = -1;
+                versions.versions.some(function(val, i) {
+                    if (val.version === versions[use]) {
+                        idx = i;
+                        return true;
+                    }
+                    return false;
+                });
+                var lines = [];
+                lines.push(<h3 key="version">{text} {versions[use]}</h3>);
+                if (idx !== -1) {
+                    var c = versions.versions[idx].components;
+                    lines.push(<div key="components">Chromium {c.chromium.split('.')[0]} + Node {c.node}</div>);
+                }
+                if (use === 'lts') {
+                    lines.push(<div key="lts-notes">{ltsNotes}</div>);
+                }
+                return (<a key={use} title={use==='lts'?ltsNotes:''} href="#" className={self.state.version === use ? 'selected': ''} onClick={self.toggleVersion.bind(self, use)}>
+                    {lines}
+                </a>);
             });
             return <div>
                 <nav>{versionList}</nav>
