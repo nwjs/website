@@ -18,7 +18,7 @@ var os2ext = {
     'win': '.zip',
     'osx': '.zip',
     'linux': '.tar.gz'
-}
+};
 
 function isMas(flavor) {
     return flavor === 'mas' || flavor === 'macappstore';
@@ -32,10 +32,9 @@ var DownloadButton = React.createClass({
          + '-' + props.version
          + '-' + props.os + '-' + props.arch
          + os2ext[props.os];
-        var flavorName = props.flavor.toUpperCase();
 
         return <div className={props.arch === 'ia32' ? 'd32bit': 'd64bit'}>
-            <a href={url}>{props.version}<br/><strong>{flavorName}</strong></a>
+            <a href={url}>{props.version}<br/><strong>{props.flavor.toUpperCase()}</strong></a>
         </div>;
     }
 });
@@ -57,6 +56,7 @@ var DownloadArea = React.createClass({
 
         return <div className="os">
             <h1>Download <em>{use}</em> for {os2name[props.os]} ({props.arch})</h1>
+            <div>Chromium {props.components.chromium.split('.')[0]} + Node {props.components.node}</div>
             <div className="dlbtnlist">
             {btnList}
             </div>
@@ -82,7 +82,7 @@ function render(downAreaElem, versions) {
     if (idx >= 0) {
         var flavors = versions.versions[idx].flavors;
         ReactDOM.render(
-            <DownloadArea use={use} files={versions.versions[idx].files} flavors={flavors} version={version} os={os} arch={arch} base={baseUrl}/>,
+            <DownloadArea use={use} files={versions.versions[idx].files} flavors={flavors} version={version} os={os} arch={arch} base={baseUrl} components={versions.versions[idx].components}/>,
             downAreaElem
         );
     }

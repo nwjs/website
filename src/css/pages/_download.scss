@@ -10,13 +10,17 @@
             display: flex;
             flex-wrap: wrap;
             h3 {
-                display: inline;
+                margin: 0px;
             }
             > * {
                 border: 1px solid $brand-color;
                 display: inline-block;
                 padding: 5px;
                 flex: 1;
+
+                > div {
+                    font-size: small;
+                }
             }
             > .selected {
                 background-color: $brand-color;
@@ -31,6 +35,19 @@
                 border: 1px solid black;
                 padding: 2px 5px;
                 text-align: center;
+
+                a {
+                    display: inline-block;
+                    width: 100%;
+                }
+
+            }
+
+            td:hover {
+                background-color: $brand-color;
+                a {
+                    color: $text-light-color;
+                }
             }
         }
     }

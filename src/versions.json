@@ -6,232 +6,416 @@
         {
             "version": "v0.17.0",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.5.0",
+                "chromium": "53.0.2785.89"
+            }
         },
         {
             "version": "v0.17.0-beta2",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.4.0",
+                "chromium": "53.0.2785.70"
+            }
         },
         {
             "version": "v0.17.0-beta1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.3.1",
+                "chromium": "53.0.2785.46"
+            }
         },
         {
             "version": "v0.16.1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.3.1",
+                "chromium": "52.0.2743.116"
+            }
         },
         {
             "version": "v0.14.7",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "5.11.1",
+                "chromium": "50.0.2661.102"
+            }
         },
         {
             "version": "v0.16.0",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.3.0",
+                "chromium": "52.0.2743.82"
+            }
         },
         {
             "version": "v0.16.0-rc2",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.3.0",
+                "chromium": "52.0.2743.75"
+            }
         },
         {
             "version": "v0.16.0-rc1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.3.0",
+                "chromium": "52.0.2743.73"
+            }
         },
         {
             "version": "v0.15.4",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.2.2",
+                "chromium": "52.0.2743.73"
+            }
         },
         {
             "version": "v0.16.0-beta2",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.2.2",
+                "chromium": "52.0.2743.49"
+            }
         },
         {
             "version": "v0.15.3",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.2.2",
+                "chromium": "51.0.2704.103"
+            }
         },
         {
             "version": "v0.15.2",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.2.1",
+                "chromium": "51.0.2704.84"
+            }
         },
         {
             "version": "v0.16.0-beta1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.2.0",
+                "chromium": "52.0.2743.19"
+            }
         },
         {
             "version": "v0.15.1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.2.0",
+                "chromium": "51.0.2704.79"
+            }
         },
         {
             "version": "v0.14.6",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "5.11.1",
+                "chromium": "50.0.2661.102"
+            }
         },
         {
             "version": "v0.15.0",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.2.0",
+                "chromium": "51.0.2704.63"
+            }
         },
         {
             "version": "v0.15.0-rc2",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.1.0",
+                "chromium": "51.0.2704.47"
+            }
         },
         {
             "version": "v0.14.5",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "5.11.1",
+                "chromium": "50.0.2661.102"
+            }
         },
         {
             "version": "v0.14.4",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "5.11.1",
+                "chromium": "50.0.2661.94"
+            }
         },
         {
             "version": "v0.15.0-rc1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.1.0",
+                "chromium": "51.0.2704.36"
+            }
         },
         {
             "version": "v0.15.0-beta2",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.0.0",
+                "chromium": "51.0.2704.29"
+            }
         },
         {
             "version": "v0.14.3",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.11.1",
+                "chromium": "50.0.2661.94"
+            }
         },
         {
             "version": "v0.15.0-beta1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk"]
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "6.0.0",
+                "chromium": "51.0.2704.22"
+            }
         },
         {
             "version": "v0.14.2",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.10.1",
+                "chromium": "50.0.2661.86"
+            }
         },
         {
             "version": "v0.14.1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.10.0",
+                "chromium": "50.0.2661.75"
+            }
         },
         {
             "version": "v0.14.0",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.10.0",
+                "chromium": "50.0.2661.75"
+            }
         },
         {
             "version": "v0.13.4",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.10.0",
+                "chromium": "49.0.2623.112"
+            }
         },
         {
             "version": "v0.14.0-rc3",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.10.0",
+                "chromium": "50.0.2661.66"
+            }
         },
         {
             "version": "v0.13.3",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.10.0",
+                "chromium": "49.0.2623.110"
+            }
         },
         {
             "version": "v0.14.0-rc2",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.9.1",
+                "chromium": "50.0.2661.57"
+            }
         },
         {
             "version": "v0.14.0-rc1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.9.0",
+                "chromium": "50.0.2661.49"
+            }
         },
         {
             "version": "v0.13.2",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.9.0",
+                "chromium": "49.0.2623.110"
+            }
         },
         {
             "version": "v0.13.1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.9.0",
+                "chromium": "49.0.2623.108"
+            }
         },
         {
             "version": "v0.13.0",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.9.0",
+                "chromium": "49.0.2623.87"
+            }
         },
         {
             "version": "v0.13.0-rc4",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.9.0",
+                "chromium": "49.0.2623.87"
+            }
         },
         {
             "version": "v0.13.0-rc3",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.8.0",
+                "chromium": "49.0.2623.87"
+            }
         },
         {
             "version": "v0.13.0-rc2",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.8.0",
+                "chromium": "49.0.2623.87"
+            }
         },
         {
             "version": "v0.13.0-rc1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.7.0",
+                "chromium": "49.0.2623.75"
+            }
         },
         {
             "version": "v0.13.0-beta7",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.6.0",
+                "chromium": "48.0.2564.116"
+            }
         },
         {
             "version": "v0.13.0-beta6",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.6.0",
+                "chromium": "48.0.2564.109"
+            }
         },
         {
             "version": "v0.13.0-beta5",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.4.1",
+                "chromium": "48.0.2564.97"
+            }
         },
         {
             "version": "v0.13.0-beta4",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.4.1",
+                "chromium": "48.0.2564.82"
+            }
         },
         {
             "version": "v0.13.0-beta3",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.1.0",
+                "chromium": "47.0.2526.73"
+            }
         },
         {
             "version": "v0.13.0-beta2",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.1.0",
+                "chromium": "47.0.2526.73"
+            }
         },
         {
             "version": "v0.13.0-beta1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
-            "flavors": ["normal", "sdk", "nacl"]
+            "flavors": ["normal", "sdk", "nacl"],
+            "components": {
+                "node": "5.1.0",
+                "chromium": "47.0.2526.73"
+            }
         },
         {
             "version": "v0.12.3",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64", "osx-ia32"],
-            "flavors": ["normal", "macappstore"]
+            "flavors": ["normal", "macappstore"],
+            "components": {
+                "node": "1.2.0",
+                "chromium": "41.0.2272.76"
+            }
         }
     ]
 }
