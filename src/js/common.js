@@ -13,5 +13,5 @@ function getJSON(url, cb) {
 }
 
 function getVersionsJSON(cb) {
-    getJSON('/versions.json', cb);
+    getJSON('/versions.json?' + new Date().getTime(), cb);
 }
