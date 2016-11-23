@@ -1,6 +1,6 @@
 {
     "latest": "v0.19.0-rc1",
-    "stable": "v0.18.7",
+    "stable": "v0.18.8",
     "lts": "v0.14.7",
     "versions": [
         {
