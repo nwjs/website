@@ -82,7 +82,7 @@
             var versions = this.props.versions;
             var baseUrl = this.props.base;
             var ltsNotes = '(Windows XP / Vista and Mac OS X 10.6 ~ 10.8)';
-            var versionList = [['stable', 'Stable'], ['latest', 'Latest'], ['lts', 'LTS']]
+            var versionList = [['stable', 'Stable'], ['latest', 'Latest']]
             .filter(function(pair) {
                 return !!versions[pair[0]];
             })
@@ -117,12 +117,17 @@
                     <li><a href={baseUrl + '/' + versions[this.state.version] + '/'}>Other downloads</a> for {versions[this.state.version]}</li>
                     <li><a href={baseUrl}>Previous releases</a></li>
                     <li><a href={baseUrl + '/live-build/'}>Nightly builds</a></li>
+                    <li><a href={baseUrl + '/' + versions['lts']} onClick={self.ltsWarning}>LTS release</a> for legacy Windows XP and Mac OS X 10.6 support</li>
                 </ul>
             </div>;
         },
         toggleVersion: function(version, e) {
             this.setState({version: version});
             e.preventDefault();
+        },
+        ltsWarning: function(e) {
+            var ok = confirm('NOTE: Chromium and Node.js of LTS release stick to a fixed version. You won\'t get security updates for LTS release. Please upgrade to latest stable version if you concern the security.');
+            if (!ok) e.preventDefault();
         }
     });
 
