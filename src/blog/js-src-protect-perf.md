@@ -23,4 +23,4 @@ $ nw --js-flags="--future" .
 
 ## Discussion
 
-See our mailing list to discuss on this article: https://groups.google.com/d/msg/nwjs-general/RZ0e1Jsj0zI/PifVr6TgAgAJ
+See our mailing list to discuss on this article: https://groups.google.com/d/msg/nwjs-general/kmQ2zCuL838/1MceRe5mFQAJ
