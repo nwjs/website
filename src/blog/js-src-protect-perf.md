@@ -19,7 +19,7 @@ $ nw --js-flags="--future" .
 ```
 [See more here](http://docs.nwjs.io/en/latest/For%20Users/Advanced/Protect%20JavaScript%20Source%20Code/) to learn how to use the source code protection feature.
 
-[It has been exactly a year](whats-new-in-0.13/) after we released the 0.13 milestone. After that we executed well on keeping close updates with Chromium upstream. NW major version bumps within 1 day or even on the same day after every Chromium browser stable upgrade. We delivered many new features and optimizations in the web engine while keeps up the quality. I'm happy to write this blog post 1 year later and see what has been done. Moving forward, we expect to keep pace and please stay tuned for more exciting news.
+[It has been exactly a year](/blog/whats-new-in-0.13/) after we released the 0.13 milestone. After that we executed well on keeping close updates with Chromium upstream. NW major version bumps within 1 day or even on the same day after every Chromium browser stable upgrade. We delivered many new features and optimizations in the web engine while keeps up the quality. I'm happy to write this blog post 1 year later and see what has been done. Moving forward, we expect to keep pace and please stay tuned for more exciting news.
 
 ## Discussion
 
