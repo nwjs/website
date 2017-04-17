@@ -117,7 +117,7 @@
                     <li><a href={baseUrl + '/' + versions[this.state.version] + '/'}>Other downloads</a> for {versions[this.state.version]}</li>
                     <li><a href={baseUrl}>Previous releases</a></li>
                     <li><a href={baseUrl + '/live-build/'}>Nightly builds</a></li>
-                    <li><a href={baseUrl + '/' + versions['lts']}>LTS release</a> for legacy Windows XP and Mac OS X 10.6 support. NOTE: Chromium and Node.js of LTS release stick to a fixed version. You won't get security updates for LTS release. Please upgrade to latest stable version if you concern the security.</li>
+                    <li><a href={baseUrl + '/' + versions['lts']}>Legacy release</a> for Windows XP and Mac OS X 10.6 support. NOTE: Chromium and Node.js of LTS release stick to a fixed version. You won't get security updates for this release. Please use version only to build the binaries for those OS versions.</li>
                     <li><a href={'https://github.com/LeonardLaszlo/nw.js-armv7-binaries'}>ARM binary from community</a></li>
                 </ul>
             </div>;
