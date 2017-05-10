@@ -128,7 +128,7 @@
         }
     });
 
-    getJSON('/versions.json', function(err, versions) {
+    getVersionsJSON(function(err, versions) {
         if (err) {
             console.error(err);
             return;
