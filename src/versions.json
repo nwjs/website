@@ -1,8 +1,26 @@
 {
-    "latest": "v0.26.1",
-    "stable": "v0.26.1",
+    "latest": "v0.27.0-beta1",
+    "stable": "v0.26.2",
     "lts": "v0.14.7",
     "versions": [
+        {
+            "version": "v0.27.0-beta1",
+            "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "8.8.1",
+                "chromium": "63.0.3239.18"
+            }
+        },
+        {
+            "version": "v0.26.2",
+            "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "8.8.1",
+                "chromium": "62.0.3202.75"
+            }
+        },
         {
             "version": "v0.26.1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
