@@ -1,15 +1,24 @@
 {
-    "latest": "v0.29.0",
-    "stable": "v0.29.0",
+    "latest": "v0.29.1",
+    "stable": "v0.29.1",
     "lts": "v0.14.7",
     "versions": [
+        {
+            "version": "v0.29.1",
+            "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "9.8.0",
+                "chromium": "65.0.3325.162"
+            }
+        },
         {
             "version": "v0.29.0",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
             "flavors": ["normal", "sdk"],
             "components": {
                 "node": "9.7.1",
-                "chromium": "65.0.3325.122"
+                "chromium": "65.0.3325.146"
             }
         },
         {
