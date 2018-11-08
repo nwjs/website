@@ -1,8 +1,17 @@
 {
-    "latest": "v0.34.1",
-    "stable": "v0.34.1",
+    "latest": "v0.34.2",
+    "stable": "v0.34.2",
     "lts": "v0.14.7",
     "versions": [
+        {
+            "version": "v0.34.2",
+            "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "11.1.0",
+                "chromium": "70.0.3538.77"
+            }
+        },
         {
             "version": "v0.34.1",
             "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
