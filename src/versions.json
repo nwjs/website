@@ -1,6 +1,6 @@
 {
     "latest": "v0.44.0-beta1",
-    "stable": "v0.43.2",
+    "stable": "v0.43.3",
     "lts": "v0.14.7",
     "versions": [
         {
@@ -10,6 +10,15 @@
             "components": {
                 "node": "13.5.0",
                 "chromium": "80.0.3987.16"
+            }
+        },
+        {
+            "version": "v0.43.3",
+            "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "13.5.0",
+                "chromium": "79.0.3945.88"
             }
         },
         {
