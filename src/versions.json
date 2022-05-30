@@ -1,8 +1,18 @@
 {
-    "latest": "v0.64.1",
-    "stable": "v0.64.1",
+    "latest": "v0.65.0",
+    "stable": "v0.65.0",
     "lts": "v0.14.7",
     "versions": [
+        {
+            "version": "v0.65.0",
+            "date": "2022/05/30",
+            "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64"],
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "18.0.0",
+                "chromium": "102.0.5005.61"
+            }
+        },
         {
             "version": "v0.64.1",
             "date": "2022/05/15",
