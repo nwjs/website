@@ -22,7 +22,7 @@
                 "refer": false
             }
         },
-        "metalsmith-markdown": true,
+        "@metalsmith/markdown": true,
         "metalsmith-babel": {
             "presets": [
                 "@babel/preset-react"
