@@ -41,7 +41,7 @@
     "metalsmith-layouts": "1.4.2",
     "metalsmith-prism": "^4.1.1",
     "metalsmith-sass": "^2.0.0",
-    "metalsmith-static": "0.0.5",
-    "st": "^1.1.0"
+    "metalsmith-static": "^0.0.5",
+    "st": "3.0.0"
   }
 }
