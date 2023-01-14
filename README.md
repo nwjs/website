@@ -5,7 +5,7 @@
 
 ### Prerequisties:
 
-* [Node.js 5 or above](http://nodejs.org) (with npm)
+* [Node.js 18 or above](http://nodejs.org) (with npm)
 
 ### Instructions
 
