@@ -32,7 +32,7 @@
         "metalsmith-sass": {
             "outputStyle": "expanded"
         },
-        "metalsmith-permalinks": {
+        "@metalsmith/permalinks": {
             "relative": false
         },
         "metalsmith-prism": true,
