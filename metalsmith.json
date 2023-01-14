@@ -11,8 +11,8 @@
             "src" : "public",
             "dest": "."
         },
-        "metalsmith-metadata": {
-            "config": "config.json"
+        "@metalsmith/metadata": {
+            "config": "src/config.json"
         },
         "@metalsmith/collections": {
             "blogs": {
