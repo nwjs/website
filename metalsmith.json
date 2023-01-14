@@ -25,7 +25,7 @@
         "metalsmith-markdown": true,
         "metalsmith-babel": {
             "presets": [
-                "react"
+                "@babel/preset-react"
             ],
             "comments": true
         },
