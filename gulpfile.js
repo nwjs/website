@@ -2,13 +2,13 @@
 
 var path = require('path');
 var gulp = require('gulp');
-var run = require('gulp-run');
 var st = require('st');
 var http = require('http');
+var { exec } = require('child_process');
 
-gulp.task('build', function(cb) {
-    run(__dirname + '/node_modules/.bin/metalsmith')
-    .exec(cb);
+gulp.task('build', async function(cb) {
+    exec(__dirname + '/node_modules/.bin/metalsmith');
+    cb();
 });
 
 gulp.task('watch', function() {
