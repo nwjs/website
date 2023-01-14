@@ -14,7 +14,7 @@
         "metalsmith-metadata": {
             "config": "config.json"
         },
-        "metalsmith-collections": {
+        "@metalsmith/collections": {
             "blogs": {
                 "pattern": "blog/**/*.md",
                 "sortBy": "date",
