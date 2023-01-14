@@ -27,7 +27,7 @@
   "homepage": "https://github.com/nwjs/website",
   "devDependencies": {
     "@babel/preset-react": "^7.18.6",
-    "bower": "^1.7.x",
+    "bower": "^1.8.14",
     "gulp": "^3.9.0",
     "gulp-run": "^1.6.12",
     "handlebars": "^4.0.5",
