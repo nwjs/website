@@ -4,10 +4,10 @@ var path = require('path');
 var gulp = require('gulp');
 var st = require('st');
 var http = require('http');
-var { exec } = require('child_process');
+var child_process = require('child_process');
 
 gulp.task('build', async function(cb) {
-    exec(__dirname + '/node_modules/.bin/metalsmith');
+    child_process.exec(__dirname + '/node_modules/.bin/metalsmith');
     cb();
 });
 
