@@ -1,26 +1,25 @@
-'use strict';
+const { exec } = require('node:child_process');
+const { createServer } = require('node:https');
+const { join } = require('node:path');
 
-var path = require('path');
-var gulp = require('gulp');
-var run = require('gulp-run');
-var st = require('st');
-var http = require('http');
+const { parallel, series, task, watch } = require('gulp');
+const st = require('st');
 
-gulp.task('build', function(cb) {
-    run(__dirname + '/node_modules/.bin/metalsmith')
-    .exec(cb);
+task('build', function(cb) {
+    exec(__dirname + '/node_modules/.bin/metalsmith');
+    cb();
 });
 
-gulp.task('watch', function() {
-    gulp.watch(['metalsmith.json', 'src/**/*', 'public/**/*', 'templates/**/*'], ['build']);
+task('watch', function() {
+    watch(['metalsmith.json', 'src/**/*', 'public/**/*', 'templates/**/*'], parallel('build'));
 });
 
-gulp.task('serve', ['build', 'watch'], function() {
-    http.createServer(st({
-        path: path.join(__dirname, 'build'),
+task('serve', series('build', task('watch'), async function() {
+    createServer(await st({
+        path: join(__dirname, 'build'),
         index: 'index.html',
         cache: false
     })).listen(3000);
-});
+}));
 
-gulp.task('default', ['serve']);
+task('default', series('serve'));
