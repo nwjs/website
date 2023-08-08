@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "gulp",
+    "start": "concurrently --kill-others \"node cfg/watch.mjs\" \"node cfg/serve.mjs\"",
     "postinstall": "bower install",
-    "serve": "gulp serve",
     "build": "metalsmith"
   },
   "repository": {
@@ -32,8 +31,8 @@
     "@metalsmith/metadata": "0.3.0",
     "@metalsmith/permalinks": "2.5.1",
     "@metalsmith/sass": "1.6.0",
-    "handlebars": "^4.7.8",
-    "marked": "^7.0.1",
+    "express": "^4.18.2",
+    "jstransformer-handlebars": "^1.2.0",
     "metalsmith": "^2.6.1",
     "metalsmith-babel": "^5.1.0",
     "metalsmith-feed": "^1.0.0",
@@ -44,7 +43,6 @@
   },
   "devDependencies": {
     "bower": "^1.8.14",
-    "gulp": "^4.0.2",
-    "st": "^3.0.0"
+    "concurrently": "^8.2.0"
   }
 }

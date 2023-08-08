@@ -15,6 +15,6 @@
     ],
     "dependencies": {
         "normalize.css": "8.0.1",
-        "react": "16.1.0"
+        "react": "~0.14.4"
     }
 }
