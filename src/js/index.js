@@ -6,7 +6,9 @@ if (os === 'mac') {
     os = 'osx';
 }
 matched = navigator.userAgent.match(/x86_64|Win64|WOW64/i);
-var arch = matched || os === 'osx' ? 'arm64' : 'ia32';
+var arch = matched ? 'x64' : 'ia32';
+if (os === 'osx')
+    arch = 'arm64';
 
 var os2name = {
     'win': 'Windows',
