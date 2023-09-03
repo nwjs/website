@@ -11,10 +11,10 @@
             "src" : "public",
             "dest": "."
         },
-        "metalsmith-metadata": {
-            "config": "config.json"
+        "@metalsmith/metadata": {
+            "config": "src/config.json"
         },
-        "metalsmith-collections": {
+        "@metalsmith/collections": {
             "blogs": {
                 "pattern": "blog/**/*.md",
                 "sortBy": "date",
@@ -22,17 +22,19 @@
                 "refer": false
             }
         },
-        "metalsmith-markdown": true,
+        "@metalsmith/markdown": {
+            "files": "src/blog/**"
+        },
         "metalsmith-babel": {
             "presets": [
-                "react"
+                "@babel/preset-react"
             ],
             "comments": true
         },
-        "metalsmith-sass": {
+        "@metalsmith/sass": {
             "outputStyle": "expanded"
         },
-        "metalsmith-permalinks": {
+        "@metalsmith/permalinks": {
             "relative": false
         },
         "metalsmith-prism": true,
