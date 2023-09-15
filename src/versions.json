@@ -1,8 +1,18 @@
 {
-    "latest": "v0.79.1",
-    "stable": "v0.79.1",
+    "latest": "v0.80.0",
+    "stable": "v0.80.0",
     "lts": "v0.14.7",
     "versions": [
+        {
+            "version": "v0.80.0",
+            "date": "2023/09/15",
+            "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64", "osx-arm64"],
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "20.5.1",
+                "chromium": "117.0.5938.63"
+            }
+        },
         {
             "version": "v0.79.1",
             "date": "2023/08/23",
