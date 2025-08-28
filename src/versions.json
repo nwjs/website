@@ -1,8 +1,18 @@
 {
-    "latest": "v0.102.1",
-    "stable": "v0.102.1",
+    "latest": "v0.103.0",
+    "stable": "v0.103.0",
     "lts": "v0.14.7",
     "versions": [
+        {
+            "version": "v0.103.0",
+            "date": "2025/08/28",
+            "files": ["win-x64", "win-ia32", "linux-x64", "linux-ia32", "osx-x64", "osx-arm64"],
+            "flavors": ["normal", "sdk"],
+            "components": {
+                "node": "24.5.0",
+                "chromium": "140.0.7339.41"
+            }
+        },
         {
             "version": "v0.102.1",
             "date": "2025/08/14",
