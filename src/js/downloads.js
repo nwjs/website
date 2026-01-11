@@ -4,6 +4,7 @@
         switch(file) {
         case 'win-x64':
         case 'win-ia32':
+        case 'win-arm64':
             return '.zip';
         case 'osx-x64':
         case 'osx-arm64':
@@ -18,6 +19,7 @@
     var file2name = {
         'win-ia32'  : 'Windows 32-bit',
         'win-x64'   : 'Windows 64-bit',
+        'win-arm64' : 'Windows ARM64',
         'osx-ia32'  : 'Mac OS X 32-bit',
         'osx-x64'   : 'Mac OS X 64-bit',
         'osx-arm64'   : 'Mac OS X ARM64',
