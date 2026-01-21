@@ -12,15 +12,15 @@ gulp.task('build', function(cb) {
 });
 
 gulp.task('watch', function() {
-    gulp.watch(['metalsmith.json', 'src/**/*', 'public/**/*', 'templates/**/*'], ['build']);
+    gulp.watch(['metalsmith.json', 'src/**/*', 'public/**/*', 'templates/**/*'],gulp.parallel('build'));
 });
 
-gulp.task('serve', ['build', 'watch'], function() {
+gulp.task('serve', gulp.series('build', gulp.parallel('watch', function() {
     http.createServer(st({
         path: path.join(__dirname, 'build'),
         index: 'index.html',
         cache: false
     })).listen(3000);
-});
+})));
 
-gulp.task('default', ['serve']);
+gulp.task('default', gulp.series('serve'));
