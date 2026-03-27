@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/nwjs/website",
   "dependencies": {
-    "esbuild": "^0.24.0",
+    "esbuild": "^0.25.0",
     "handlebars": "^4.7.8",
     "marked": "^17.0.5",
     "sass": "^1.83.0"
