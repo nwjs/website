@@ -20,7 +20,7 @@ gulp.task('serve', ['build', 'watch'], function() {
         path: path.join(__dirname, 'build'),
         index: 'index.html',
         cache: false
-    })).listen(3000);
+    })).listen(3003);
 });
 
 gulp.task('default', ['serve']);
